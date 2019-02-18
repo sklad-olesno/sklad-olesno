@@ -2,4 +2,4 @@
 title: test
 description: Oferta
 ---
-Oferta - Strona 2
+Strona Oferta

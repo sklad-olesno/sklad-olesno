@@ -10,52 +10,35 @@ module.exports = {
   },
   content: [
     [
-      "pages/homepage",
+      "pages",
       {
-        page: "/index",
-        permalink: "/",
-        isPost: false
-      }
-    ],
-    [
-      "offer",
-      {
-        page: "/offer",
-        permalink: "/oferta",
-        isPost: false
-      }
-    ],
-    [
-      "prices",
-      {
-        page: "/prices",
-        permalink: "/prices",
-        isPost: false
-      }
-    ],
-    [
-      "transport",
-      {
-        page: "/transport",
-        permalink: "/transport",
-        isPost: false
-      }
-    ],
-    [
-      "mati-transport",
-      {
-        page: "/mati-transport",
-        permalink: "/mati-transport",
-        isPost: false
-      }
-    ],
-    [
-      "contact",
-      {
-        page: "/contact",
-        permalink: "/contact",
+        page: "/pages/_page",
+        permalink: "/:slug",
         isPost: false
       }
     ]
   ]
+  // content: [
+  //   ['pages', {
+  //     page: '/pages/_page',
+  //     permalink: '/pages/:slug',
+  //     isPost: false,
+  //     data: {
+  //       generatedBy: 'Nuxt with the nuxtdown module'
+  //     },
+  //     breadcrumbs: true,
+  //     toc: 1,
+  //     markdown: {
+  //       plugins: {
+  //         toc: {
+  //           permalinkClass: 'nuxtdown-toc',
+  //           permalinkSymbol: '↗'
+  //         },
+  //         attrs: require('markdown-it-attrs'),
+  //         figures: [require('markdown-it-implicit-figures'), { figcaption: true }],
+  //         video: require('markdown-it-video')
+  //       }
+  //     }
+  //   }]
+  // ]
 };

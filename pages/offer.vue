@@ -20,7 +20,7 @@ export default {
   },
   asyncData: async ({ app, route, payload }) => {
     return {
-      page: (await app.$content("/pages").get(route.path)) || payload
+      page: (await app.$content("/offer").get(route.path)) || payload
     };
   }
 };

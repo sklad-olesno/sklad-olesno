@@ -41,6 +41,7 @@ collections:
               - {label: "Luzem", name: non_packed, widget: string, default: "750zł"}
               - {label: "Worek", name: packed, widget: string, default: "820zł"}
               - {label: "Popiół", name: ash, widget: string, default: "7-10%"}
+              - {label: "Obrazek", name: image, widget: image}
           - {label: "Treść pod cennikiem", name: body_after, widget: markdown}
       - label: "Transport"
         name: "transport"

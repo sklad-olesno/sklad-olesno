@@ -1,5 +1,5 @@
 ---
 title: test
-description: test 123
+description: Oferta
 ---
-Treść 123 - Strona 1
+Oferta - Strona 2

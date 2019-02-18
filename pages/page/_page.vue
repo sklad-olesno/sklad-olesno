@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="example-content">
     <nuxtdown-body class="body" :body="page.body"/>
   </div>
 </template>

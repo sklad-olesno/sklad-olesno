@@ -8,16 +8,16 @@ module.exports = {
   */
   head: {
     htmlAttrs: {
-      lang: 'en',
+      lang: 'pl',
     },
-    title: "My Website",
+    title: "Skład opału",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Welcome to my website."
+        content: "Skład opału"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
@@ -27,7 +27,8 @@ module.exports = {
   */
   loading: { color: "#FFBB43" },
   css: [
-    '~/assets/styles.css'
+    '~/assets/styles.css',
+    '~/assets/custom.css'
   ],
   /*
   ** Build configuration

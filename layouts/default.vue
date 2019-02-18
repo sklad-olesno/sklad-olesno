@@ -2,7 +2,7 @@
   <div>
     <nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
       <a href="/" class="pa3 db mr4 h-100 w3 flex-none" style="margin: 0;">
-        <img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100">
+        <img src="~/assets/logo.svg" alt="Skład opału logo" class="br0 db mb0 w-100">
       </a>
 
       <ul class="flex b grey-3">
@@ -34,21 +34,7 @@
 
         <div class="measure-narrow center mb4">
 
-          <img src="/img/logo.svg" alt="Kaldi logo" class="db w4 center mb4 br0">
-          <p class="f3 lh-title light-gray b tc mb2">Newsletter subscribe</p>
-          <p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
-
-          <form action="" class="flex-ns mb3">
-
-            <fieldset class="flex-auto mb2 mb0-ns mr2-ns" name="newsletter" action="newsletter-subscribe">
-              <input type="text" id="email" placeholder="Your email" class="w-100">
-              <label for="email">Your email</label>
-            </fieldset>
-
-            <button class="btn mb3 w-100 w-auto-ns mb0-ns raise" type="submit">Submit</button>
-
-          </form>
-
+          <img src="~/assets/logo.svg" alt="Skład opału logo" class="db w4 center mb4 br0">
 
         </div>
 
@@ -83,31 +69,6 @@
                   </svg>
                 </a>
               </li>
-
-              <li class="dib ph2 raise">
-                <a href="#" class="link bg-white black db relative br-100 pa2">
-                  <svg width="16px" height="16px" class="db">
-                    <use xlink:href="#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="dib ph2 raise">
-                <a href="#" class="link bg-white black db relative br-100 pa2">
-                  <svg width="16px" height="16px" class="db">
-                    <use xlink:href="#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="dib ph2 raise">
-                <a href="#" class="link bg-white black db relative br-100 pa2">
-                  <svg width="16px" height="16px" class="db">
-                    <use xlink:href="#vimeo"></use>
-                  </svg>
-                </a>
-              </li>
-
             </ul>
           </div>
 

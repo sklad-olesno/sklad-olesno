@@ -1,6 +1,18 @@
 <template>
   <div>
-    <nuxtdown-body class="body" :body="page.body"/>
+    <nuxtdown-body class="body" :body="page.body_before"/>
+    <ul>
+      <li v-for="item in page.prices">
+        <div>{{ item.name }}</div>
+        <div>{{ item.granulation }}</div>
+        <div>{{ item.calorific }}</div>
+        <div>{{ item.non_packed }}</div>
+        <div>{{ item.packed }}</div>
+        <div>{{ item.ash }}</div>
+        <div>{{ item.image }}</div>
+      </li>
+    </ul>
+    <nuxtdown-body class="body" :body="page.body_after"/>
   </div>
 </template>
 

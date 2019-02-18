@@ -10,9 +10,16 @@ prices:
     calorific: 24 mj
     granulation: 40 - 80 mm
     image: /images/uploads/ekogroszek.jpg
-    name: Groszek
+    name: Ekogroszek
     non_packed: 750 zł
     packed: 820 zł
+  - ash: 7 - 10 %
+    calorific: 24 mj
+    granulation: 80 - 200 mm
+    image: /images/uploads/kostka.jpg
+    name: Kostka
+    non_packed: 800 zł
+    packed: 870 zł
 body_after: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis

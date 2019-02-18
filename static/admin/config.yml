@@ -36,8 +36,8 @@ collections:
             required: true
             fields:
               - {label: "Nazwa", name: name, widget: string, default: "Orzech"}
-              - {label: "Granulacja", name: name, widget: string, default: "40-80mm"}
-              - {label: "Kaloryczność", name: name, widget: string, default: "24MJ"}
+              - {label: "Granulacja", name: granulation, widget: string, default: "40-80mm"}
+              - {label: "Kaloryczność", name: calorific, widget: string, default: "24MJ"}
               - {label: "Luzem", name: non_packed, widget: string, default: "750zł"}
               - {label: "Worek", name: packed, widget: string, default: "820zł"}
               - {label: "Popiół", name: ash, widget: string, default: "7-10%"}

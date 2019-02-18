@@ -17,14 +17,14 @@ collections:
           - {label: "Opis", name: description, widget: text, required: true}
           - {label: "Treść", name: body, widget: markdown}
       - label: "Oferta"
-        name: "oferta"
+        name: "offer"
         file: "content/pages/offer.md"
         fields:
           - {label: "Tytuł", name: title, widget: string, required: true}
           - {label: "Opis", name: description, widget: text, required: true}
           - {label: "Treść", name: body, widget: markdown}
       - label: "Cennik"
-        name: "cennik"
+        name: "prices"
         file: "content/pages/prices.md"
         fields:
           - {label: "Tytuł", name: title, widget: string, required: true}
@@ -45,7 +45,7 @@ collections:
           - {label: "Opis", name: description, widget: text, required: true}
           - {label: "Treść", name: body, widget: markdown}
       - label: "Kontakt"
-        name: "kontakt"
+        name: "contact"
         file: "content/pages/contact.md"
         fields:
           - {label: "Tytuł", name: title, widget: string, required: true}

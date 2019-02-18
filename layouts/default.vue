@@ -7,10 +7,10 @@
 
       <ul class="flex b grey-3">
         <li>
-          <nuxt-link :to="'/oferta'" class="pa3 no-underline db">Oferta</nuxt-link>
+          <nuxt-link :to="'/offer'" class="pa3 no-underline db">Oferta</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/cennik'" class="pa3 no-underline db">Cennik</nuxt-link>
+          <nuxt-link :to="'/prices'" class="pa3 no-underline db">Cennik</nuxt-link>
         </li>
         <li>
           <nuxt-link :to="'/transport'" class="pa3 no-underline db">Transport</nuxt-link>
@@ -19,7 +19,7 @@
           <nuxt-link :to="'/mati-transport'" class="pa3 no-underline db">Mati-Transport</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/kontakt'" class="pa3 no-underline db">Kontakt</nuxt-link>
+          <nuxt-link :to="'/contact'" class="pa3 no-underline db">Kontakt</nuxt-link>
         </li>
       </ul>
     </nav>

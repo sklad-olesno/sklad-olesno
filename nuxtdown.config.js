@@ -10,10 +10,50 @@ module.exports = {
   },
   content: [
     [
-      "pages",
+      "pages/homepage",
       {
-        page: "/page/_page",
-        permalink: "/:slug",
+        page: "/index",
+        permalink: "/",
+        isPost: false
+      }
+    ],
+    [
+      "offer",
+      {
+        page: "/offer",
+        permalink: "/oferta",
+        isPost: false
+      }
+    ],
+    [
+      "prices",
+      {
+        page: "/prices",
+        permalink: "/prices",
+        isPost: false
+      }
+    ],
+    [
+      "transport",
+      {
+        page: "/transport",
+        permalink: "/transport",
+        isPost: false
+      }
+    ],
+    [
+      "mati-transport",
+      {
+        page: "/mati-transport",
+        permalink: "/mati-transport",
+        isPost: false
+      }
+    ],
+    [
+      "contact",
+      {
+        page: "/contact",
+        permalink: "/contact",
         isPost: false
       }
     ]

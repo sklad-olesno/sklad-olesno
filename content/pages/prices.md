@@ -1,5 +1,5 @@
 ---
 title: test
-description: test 123
+description: Cennik
 ---
-Treść 123 - Strona 1
+Cennik - Strona 3

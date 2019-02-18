@@ -1,65 +1,119 @@
 <template>
   <div>
-    <nav>
-      <ul>
+    <nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+      <a href="/" class="pa3 db mr4 h-100 w3 flex-none" style="margin: 0;">
+        <img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100">
+      </a>
+
+      <ul class="flex b grey-3">
         <li>
-          <nuxt-link :to="'/page-1'">Page 1</nuxt-link>
+          <nuxt-link :to="'/oferta'" class="pa3 no-underline db">Oferta</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/page-2'">Page 2</nuxt-link>
+          <nuxt-link :to="'/cennik'" class="pa3 no-underline db">Cennik</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="'/transport'" class="pa3 no-underline db">Transport</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="'/mati-transport'" class="pa3 no-underline db">Mati-Transport</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="'/kontakt'" class="pa3 no-underline db">Kontakt</nuxt-link>
         </li>
       </ul>
     </nav>
-    <nuxt/>
+
+    <main>
+      <nuxt/>
+    </main>
+
+    <footer class="bg-black ph3 pv4 white">
+
+      <div class="mw7 center pt3">
+
+        <div class="measure-narrow center mb4">
+
+          <img src="/img/logo.svg" alt="Kaldi logo" class="db w4 center mb4 br0">
+          <p class="f3 lh-title light-gray b tc mb2">Newsletter subscribe</p>
+          <p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
+
+          <form action="" class="flex-ns mb3">
+
+            <fieldset class="flex-auto mb2 mb0-ns mr2-ns" name="newsletter" action="newsletter-subscribe">
+              <input type="text" id="email" placeholder="Your email" class="w-100">
+              <label for="email">Your email</label>
+            </fieldset>
+
+            <button class="btn mb3 w-100 w-auto-ns mb0-ns raise" type="submit">Submit</button>
+
+          </form>
+
+
+        </div>
+
+        <div class="flex-ns justify-between">
+
+          <div>
+            <h3 class="f4 b lh-title mb1 primary">Kaldi</h3>
+            <ul class="mb3">
+              <li><a href="/" class="link">Home</a></li>
+              <li><a href="/products" class="link">Our products</a></li>
+              <li><a href="/values" class="link">About</a></li>
+              <li><a href="/post" class="link">Blog</a></li>
+              <li><a href="/contact" class="link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="f4 b lh-title mb1 primary">Find out more</h3>
+            <ul class="mb3">
+              <li><a href="/post/jamaica-blue/" class="link">Latest offers</a></li>
+              <li><a href="/contact" class="link">Schedule and appointment</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="f4 b lh-title mb2 primary">Social media</h3>
+            <ul class="mhn2">
+              <li class="dib ph2 raise">
+                <a href="#" class="link bg-white black db relative br-100 pa2">
+                  <svg width="16px" height="16px" class="db">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="dib ph2 raise">
+                <a href="#" class="link bg-white black db relative br-100 pa2">
+                  <svg width="16px" height="16px" class="db">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="dib ph2 raise">
+                <a href="#" class="link bg-white black db relative br-100 pa2">
+                  <svg width="16px" height="16px" class="db">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="dib ph2 raise">
+                <a href="#" class="link bg-white black db relative br-100 pa2">
+                  <svg width="16px" height="16px" class="db">
+                    <use xlink:href="#vimeo"></use>
+                  </svg>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
   </div>
 </template>
-
-<style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>

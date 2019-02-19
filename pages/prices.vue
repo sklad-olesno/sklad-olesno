@@ -1,25 +1,30 @@
 <template>
   <div class="prices-block">
 
-    <h1 class="f1 primary tc ttu fw6">Cennik</h1>
+    <h1 class="f1 primary tc ttu fw6 mt5">Cennik</h1>
 
     <nuxtdown-body class="cms tc mb5 mt3" v-if="typeof page.body_before !== 'undefined'" :body="page.body_before"/>
 
-    <ul class="prices-block--list flex mhn2-ns mw7 flex-wrap justify-center">
+    <ul class="prices-block--list flex mhn2-ns mw7 flex-wrap">
       <li class="w-33-ns ph2 mb4" v-for="item in page.prices">
 
           <div class="ph2">
-            <h3 class="b f5 grey-3 tc lh-title mb1">{{ item.name }}</h3>
-            <p class="primary f1 b tc lh-title center mb1">
-              {{ item.non_packed }}
-            </p>
-            <p class="secondary f2 b tc lh-title center">
-              {{ item.packed }}
-            </p>
+            <h3 class="b f4 primary tl lh-title mb3">{{ item.name }}</h3>
+            <div class="flex">
+              <p class="secondary f3 b tl lh-title center mb1 flex flex-column w-75 flex-auto">
+                {{ item.non_packed }}
+                <span class="f6">luzem</span>
+              </p>
+              <p class="grey-3 f3 b tl lh-title center flex flex-column w-100 flex-auto">
+                {{ item.packed }}
+                <span class="f6">worek</span>
+              </p>
+            </div>
+
             <p class="b">
               <img class="img-fluid" :src="item.image"/>
             </p>
-            <ul>
+            <ul class="tl">
               <li>
                 <p class="pb2 mb2 divider-grey">Granulacja: {{ item.granulation }}</p>
               </li>
@@ -38,7 +43,9 @@
 
       </li>
     </ul>
+
     <nuxtdown-body class="cms tc mb5 mt5" v-if="typeof page.body_after !== 'undefined'" :body="page.body_after"/>
+    <span v-if="typeof page.body_after === 'undefined'" class="db mb5"> </span>
   </div>
 </template>
 

@@ -67,6 +67,7 @@
 
     <nuxtdown-body v-if="typeof page.body_after !== 'undefined'" class="cms tc mb5 mt3" :body="page.body_after"/>
 
+    <span v-if="typeof page.body_after === 'undefined'" class="db mb5"> </span>
   </div>
 </template>
 

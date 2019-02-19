@@ -29,7 +29,7 @@ collections:
         fields:
           - {label: "Tytuł", name: title, widget: string, required: true}
           - {label: "Opis", name: description, widget: text, required: true}
-          - {label: "Treść nad cennikiem", name: body_before, widget: markdown}
+          - {label: "Treść nad cennikiem", name: body_before, required: true, widget: markdown}
           - label: "Cennik"
             name: "prices"
             widget: "list"
@@ -42,7 +42,7 @@ collections:
               - {label: "Worek", name: packed, widget: string, default: "820zł"}
               - {label: "Popiół", name: ash, widget: string, default: "7-10%"}
               - {label: "Obrazek", name: image, widget: image}
-          - {label: "Treść pod cennikiem", name: body_after, widget: markdown}
+          - {label: "Treść pod cennikiem", name: body_after, required: false, widget: markdown}
       - label: "Transport"
         name: "transport"
         file: "content/pages/transport.md"

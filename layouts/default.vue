@@ -1,25 +1,25 @@
 <template>
   <div>
-    <nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+    <nav class="flex flex-wrap justify-between items-center center bg-white divider-grey relative" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
       <a href="/" class="pa3 db mr4 h-100 w4 flex-none mh0">
         <img src="~/assets/logo.svg" alt="Skład opału logo" class="br0 db mb0 w-100">
       </a>
 
-      <ul class="flex b grey-3">
+      <ul class="flex flex-wrap b grey-3 justify-center mb3 mb0-ns">
         <li>
-          <nuxt-link :to="'/offer'" class="pa3 no-underline db">Oferta</nuxt-link>
+          <nuxt-link :to="'/offer'" class="pa2 pa3-ns no-underline db">Oferta</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/prices'" class="pa3 no-underline db">Cennik</nuxt-link>
+          <nuxt-link :to="'/prices'" class="pa2 pa3-ns no-underline db">Cennik</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/transport'" class="pa3 no-underline db">Transport</nuxt-link>
+          <nuxt-link :to="'/transport'" class="pa2 pa3-ns no-underline db">Transport</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/mati-transport'" class="pa3 no-underline db">Mati-Transport</nuxt-link>
+          <nuxt-link :to="'/mati-transport'" class="pa2 pa3-ns no-underline db">Mati-Transport</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/contact'" class="pa3 no-underline db">Kontakt</nuxt-link>
+          <nuxt-link :to="'/contact'" class="pa2 pa3-ns no-underline db">Kontakt</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -78,3 +78,11 @@
     </footer>
   </div>
 </template>
+
+<style type="text/css">
+  @media (max-width: 768px) {
+    .divider-grey ul a:focus,.divider-grey ul a:hover {
+      box-shadow: none;
+    }
+  }
+</style>

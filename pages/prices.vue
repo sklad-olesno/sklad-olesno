@@ -3,43 +3,41 @@
 
     <h1 class="f1 primary tc ttu fw6 mt5">Cennik</h1>
 
-    <nuxtdown-body class="cms tc mb5 mt3" v-if="typeof page.body_before !== 'undefined'" :body="page.body_before"/>
+    <nuxtdown-body class="cms tc mb5 mt3 ph2" v-if="typeof page.body_before !== 'undefined'" :body="page.body_before"/>
 
-    <ul class="prices-block--list flex mhn2-ns mw7 flex-wrap">
+    <ul class="prices-block--list flex flex-wrap justify-center ph2">
       <li class="w-33-ns ph2 mb4" v-for="item in page.prices">
 
-          <div class="ph2">
-            <h3 class="b f4 primary tl lh-title mb3">{{ item.name }}</h3>
-            <div class="flex">
-              <p class="secondary f3 b tl lh-title center mb1 flex flex-column w-75 flex-auto">
-                {{ item.non_packed }}
-                <span class="f6">luzem</span>
-              </p>
-              <p class="grey-3 f3 b tl lh-title center flex flex-column w-100 flex-auto">
-                {{ item.packed }}
-                <span class="f6">worek</span>
-              </p>
-            </div>
-
-            <p class="b">
-              <img class="img-fluid" :src="item.image"/>
+          <h3 class="b f4 primary tl lh-title mb3">{{ item.name }}</h3>
+          <div class="flex">
+            <p class="secondary f3 b tl lh-title center mb1 flex flex-column w-75 flex-auto">
+              {{ item.non_packed }}
+              <span class="f6">luzem</span>
             </p>
-            <ul class="tl">
-              <li>
-                <p class="pb2 mb2 divider-grey">Granulacja: {{ item.granulation }}</p>
-              </li>
-
-              <li>
-                <p class="pb2 mb2 divider-grey">Kaloryczność: {{ item.calorific }}</p>
-              </li>
-
-              <li>
-                <p class="">Popiół: {{ item.ash }}</p>
-              </li>
-
-            </ul>
-
+            <p class="grey-3 f3 b tl lh-title center flex flex-column w-100 flex-auto">
+              {{ item.packed }}
+              <span class="f6">worek</span>
+            </p>
           </div>
+
+          <p class="b">
+            <img class="img-fluid" :src="item.image"/>
+          </p>
+        
+          <ul class="tl">
+            <li>
+              <p class="pb2 mb2 divider-grey">Granulacja: {{ item.granulation }}</p>
+            </li>
+
+            <li>
+              <p class="pb2 mb2 divider-grey">Kaloryczność: {{ item.calorific }}</p>
+            </li>
+
+            <li>
+              <p class="">Popiół: {{ item.ash }}</p>
+            </li>
+
+          </ul>
 
       </li>
     </ul>

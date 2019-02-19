@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
-      <a href="/" class="pa3 db mr4 h-100 w3 flex-none" style="margin: 0;">
+      <a href="/" class="pa3 db mr4 h-100 w4 flex-none mh0">
         <img src="~/assets/logo.svg" alt="Skład opału logo" class="br0 db mb0 w-100">
       </a>
 
@@ -24,7 +24,7 @@
       </ul>
     </nav>
 
-    <main>
+    <main class="mw7 center tc">
       <nuxt/>
     </main>
 
@@ -34,7 +34,7 @@
 
         <div class="measure-narrow center mb4">
 
-          <img src="~/assets/logo.svg" alt="Skład opału logo" class="db w4 center mb4 br0">
+          <img src="~/assets/logo-white.svg" alt="Skład opału logo" class="db w4 center mb4 br0">
 
         </div>
 

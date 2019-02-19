@@ -1,18 +1,41 @@
 <template>
-  <div class="example-content">
-    <nuxtdown-body class="body" :body="page.body_before"/>
-    <ul>
-      <li v-for="item in page.prices">
-        <div>{{ item.name }}</div>
-        <div>{{ item.granulation }}</div>
-        <div>{{ item.calorific }}</div>
-        <div>{{ item.non_packed }}</div>
-        <div>{{ item.packed }}</div>
-        <div>{{ item.ash }}</div>
-        <div>{{ item.image }}</div>
+  <div class="prices-block example-content">
+    <nuxtdown-body class="body tc mb5 mt5" :body="page.body_before"/>
+
+    <ul class="prices-block--list flex-ns mhn2-ns mw7">
+      <li class="w-33-ns ph2" v-for="item in page.prices">
+
+          <div class="ph2">
+            <h3 class="b f5 grey-3 tc lh-title mb1">{{ item.name }}</h3>
+            <p class="primary f1 b tc lh-title center mb1">
+              {{ item.non_packed }}<span class="f4">zł</span>
+            </p>
+            <p class="secondary f2 b tc lh-title center">
+              {{ item.packed }}<span class="f4">zł</span>
+            </p>
+            <p class="b">
+              <img class="img-fluid" :src="item.image"/>
+            </p>
+            <ul>
+              <li>
+                <p class="pb2 mb2 divider-grey">Granulacja: {{ item.granulation }}</p>
+              </li>
+
+              <li>
+                <p class="pb2 mb2 divider-grey">Kaloryczność: {{ item.calorific }}</p>
+              </li>
+
+              <li>
+                <p class="">Popiół: {{ item.ash }}</p>
+              </li>
+
+            </ul>
+
+          </div>
+
       </li>
     </ul>
-    <nuxtdown-body class="body" :body="page.body_after"/>
+    <nuxtdown-body class="body tc mb5 mt5" :body="page.body_after"/>
   </div>
 </template>
 
@@ -37,3 +60,9 @@ export default {
   }
 };
 </script>
+
+<style type="text/css">
+  .prices-block--list{
+
+  }
+</style>

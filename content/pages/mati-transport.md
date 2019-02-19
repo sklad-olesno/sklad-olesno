@@ -1,5 +1,5 @@
 ---
-title: Mati trans
-description: Mati trans
+title: Mati-Trans
+description: Mati-Trans
 ---
 Mati-Trans

@@ -1,5 +1,5 @@
 ---
-title: test
+title: Oferta
 description: Oferta
 ---
 Strona Oferta

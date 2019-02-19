@@ -1,17 +1,20 @@
 <template>
-  <div class="prices-block example-content">
-    <nuxtdown-body class="body tc mb5 mt5" :body="page.body_before"/>
+  <div class="prices-block">
 
-    <ul class="prices-block--list flex-ns mhn2-ns mw7">
-      <li class="w-33-ns ph2" v-for="item in page.prices">
+    <h1 class="f1 primary tc ttu fw6">Cennik</h1>
+
+    <nuxtdown-body class="cms tc mb5 mt3" v-if="typeof page.body_before !== 'undefined'" :body="page.body_before"/>
+
+    <ul class="prices-block--list flex mhn2-ns mw7 flex-wrap justify-center">
+      <li class="w-33-ns ph2 mb4" v-for="item in page.prices">
 
           <div class="ph2">
             <h3 class="b f5 grey-3 tc lh-title mb1">{{ item.name }}</h3>
             <p class="primary f1 b tc lh-title center mb1">
-              {{ item.non_packed }}<span class="f4">zł</span>
+              {{ item.non_packed }}
             </p>
             <p class="secondary f2 b tc lh-title center">
-              {{ item.packed }}<span class="f4">zł</span>
+              {{ item.packed }}
             </p>
             <p class="b">
               <img class="img-fluid" :src="item.image"/>
@@ -35,7 +38,7 @@
 
       </li>
     </ul>
-    <nuxtdown-body class="body tc mb5 mt5" :body="page.body_after"/>
+    <nuxtdown-body class="cms tc mb5 mt5" v-if="typeof page.body_after !== 'undefined'" :body="page.body_after"/>
   </div>
 </template>
 

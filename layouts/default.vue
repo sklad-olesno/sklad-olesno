@@ -24,8 +24,8 @@
       </ul>
     </nav>
 
-    <main class="mw7 center tc flex-auto">
-      <nuxt/>
+    <main class="flex-auto tc">
+      <nuxt class="center mw7"/>
     </main>
 
     <footer class="bg-black ph3 pv4 white">
@@ -80,6 +80,11 @@
     </footer>
   </div>
 </template>
+
+<script>
+  export default {
+  }
+</script>
 
 <style type="text/css">
   @media (max-width: 768px) {

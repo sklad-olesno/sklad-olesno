@@ -54,7 +54,7 @@
     </div>
 
 
-    <div class="bg-grey-1 pv4">
+    <div class="bg-grey-1 pv4 mb4">
       <div class="ph3 mw7 center">
 
         <div class="flex-l mhn2-l">
@@ -71,59 +71,6 @@
 
         <div class="tc">
           <a href="/values" class="btn raise">Read more</a>
-        </div>
-
-      </div>
-    </div>
-
-
-    <div class="bg-off-white pv4">
-      <div class="ph3 mw7 center">
-
-        <h2 class="f2 b lh-title mb3">Latest stories</h2>
-
-        <div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
-
-          <div class="ph1-ns w-50-ns flex">
-            <a href="/post/brewing-chemex/" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
-
-              <h2 class="f3 b lh-title mb1 primary">A beginners’ guide to brewing with Chemex</h2>
-              <p class="mid-gray lh-title mb2">Wed, Jan 4, 2017</p>
-              <p class="mb0">Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.</p>
-              <p class="link b dib black mb0">Read more →</p>
-
-            </a>
-
-          </div>
-
-          <div class="ph1-ns w-50-ns flex">
-            <a href="/post/jamaica-blue/" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
-
-              <h2 class="f3 b lh-title mb1 primary">Just in: small batch of Jamaica Blue Mountain in store next week</h2>
-              <p class="mid-gray lh-title mb2">Wed, Jan 4, 2017</p>
-              <p class="mb0">We’re proud to announce that we’ll be offering a small batch of Jamaica Blue Mountain coffee beans in our store next week.</p>
-              <p class="link b dib black mb0">Read more →</p>
-
-            </a>
-
-          </div>
-
-          <div class="ph1-ns w-50-ns flex">
-            <a href="/post/making-sense/" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
-
-              <h2 class="f3 b lh-title mb1 primary">Making sense of the SCAA’s new Flavor Wheel</h2>
-              <p class="mid-gray lh-title mb2">Sat, Dec 17, 2016</p>
-              <p class="mb0">The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.</p>
-              <p class="link b dib black mb0">Read more →</p>
-
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="tc">
-          <a href="/post" class="btn raise">Read more</a>
         </div>
 
       </div>

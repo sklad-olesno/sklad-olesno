@@ -76,7 +76,7 @@
         </div>
       </div>
 
-      <p class="tc grey-2 center f6">2019 © webo.agency</p>
+      <p class="tc grey-2 center f6">2019 © składopału.pl</p>
 
     </footer>
   </div>

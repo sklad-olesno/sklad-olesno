@@ -33,9 +33,7 @@ collections:
                 widget: "select"
                 options:
                   - { label: "1 kolumna", value: "single" }
-                  - { label: "2 kolumny (tytuł || tekst)", value: "multi_tekst" }
-                  - { label: "2 kolumny (tytuł || tekst + obrazek) - przycisk pod tekstem", value: "multi_tekst_image_button_tekst" }
-                  - { label: "2 kolumny (tytuł + tekst || obrazek) - przycisk pod kolumnami", value: "multi_tekst_image_button_end" }
+                  - { label: "2 kolumny ", value: "duo" }
               - label: "Umiejscowienie przycisku"
                 name: "section_layout_button"
                 widget: "select"

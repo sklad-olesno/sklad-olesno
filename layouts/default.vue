@@ -44,7 +44,6 @@
           <div>
             <h3 class="f4 b lh-title mb1 primary">Menu</h3>
             <ul class="mb3">
-              <li><a href="/" class="link db">Strona główna</a></li>
               <li><nuxt-link :to="'/offer'" class="link db">Oferta</nuxt-link></li>
               <li><nuxt-link :to="'/prices'" class="link db">Cennik</nuxt-link></li>
               <li><nuxt-link :to="'/transport'" class="link db">Transport</nuxt-link></li>

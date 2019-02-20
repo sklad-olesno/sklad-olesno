@@ -1,24 +1,32 @@
 <template>
   <div>
-    <div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('/img/home/jumbotron.jpg')">
+    <div class="pv5 pv6-l ph3 bg-center cover" v-bind:style="{ backgroundImage: 'url(' + page.baner_image + ')' }">
       <div class="mw7 center ph3">
         <div class="db mb3">
           <div class="mw7 relative bg-fix-primary mb3">
             <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-              Great coffee with a conscience
+              {{ page.baner_title }}
             </h1>
           </div>
           <div class="mw7 relative bg-fix-primary">
-
             <p class="b f4 di lh-title mb3 white mw6 bg-primary">
-              Support sustainable farming while enjoying a cup
+              {{ page.baner_subtitle }}
             </p>
-
           </div>
         </div>
       </div>
     </div>
 
+
+    <ul class="flex flex-wrap justify-center ph2">
+      <li class="w-33-ns ph2 mb4" v-for="section in page.sections">
+        {{ section.section_title }}
+        {{ section.section_description }}
+        <img :src="section.section_image" class=""/>
+        {{ section.section_button_title }}
+        {{ section.section_button_link }}
+      </li>
+    </ul>
 
     <div class="bg-grey-1 pv4">
       <div class="flex-l mhn1-l ph3 center mw7">

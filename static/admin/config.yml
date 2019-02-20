@@ -15,7 +15,19 @@ collections:
         fields:
           - {label: "Tytuł", name: title, widget: string, required: true}
           - {label: "Opis", name: description, widget: text, required: true}
-          - {label: "Treść", name: body, widget: markdown}
+          - {label: "Baner - tytuł", name: baner_title, widget: string}
+          - {label: "Baner - subtytuł", name: baner_subtitle, widget: string}
+          - {label: "Baner - grafika", name: baner_image, widget: image}
+          - label: "Sekcje z informacjami"
+            name: "sections"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Tytuł", name: section_title, widget: string}
+              - {label: "Opis", name: section_description, widget: text}
+              - {label: "Obrazek", name: section_image, widget: image}
+              - {label: "Przycisk - tytuł", name: section_button_title, widget: string}
+              - {label: "Przycisk - link", name: section_button_link, widget: string}
       - label: "Oferta"
         name: "offer"
         file: "content/pages/offer.md"

@@ -91,3 +91,21 @@ collections:
           - {label: "Treść", name: body, widget: markdown}
           - {label: "Treść nad formularzem", name: body_before, widget: markdown}
           - {label: "Treść pod formularzem", name: body_after, widget: markdown}
+  - name: "settings"
+    label: "Ustawienia"
+      - label: "Dane kontaktowe"
+        name: "contact"
+        file: "content/settings/contact.md"
+        fields:
+          - {label: "Telefon", name: telephone, widget: string, required: true}
+          - {label: "Email", name: email, widget: string, required: true}
+          - {label: "Facebook", name: facebook, widget: string}
+      - label: "Adres"
+        name: "homepage"
+        file: "content/settings/adress.md"
+        fields:
+          - {label: "Nazwa firmy", name: company_name, widget: string, required: true}
+          - {label: "Ulica", name: company_street, widget: text}
+          - {label: "Kod pocztowy", name: company_zip_code, widget: string}
+          - {label: "Miasto", name: company_city, widget: string}
+          - {label: "Godziny pracy", name: company_hours, widget: image}

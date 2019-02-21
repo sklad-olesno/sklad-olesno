@@ -93,6 +93,7 @@ collections:
           - {label: "Treść pod formularzem", name: body_after, widget: markdown}
   - name: "settings"
     label: "Ustawienia"
+    files:
       - label: "Dane kontaktowe"
         name: "contact"
         file: "content/settings/contact.md"

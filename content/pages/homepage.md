@@ -10,7 +10,7 @@ sections:
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco.
     section_layout_block: duo
-    section_title: Dlaczego Skład Opału Olesno
+    section_title: Skład Opału Olesno
   - section_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

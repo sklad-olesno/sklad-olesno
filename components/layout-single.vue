@@ -27,7 +27,7 @@
       />
 
       <a
-        v-if="data.section_button_link && (data.section_layout_button === data.section_layout_button_image || data.section_layout_button === data.section_layout_button_end)"
+        v-if="data.section_button_link && (data.section_layout_button === 'section_layout_button_image' || data.section_layout_button === 'section_layout_button_end')"
         :href="data.section_button_link"
         class="btn raise center tc"
       >

@@ -1,17 +1,19 @@
 module.exports = {
   modules: [
     "nuxtdown",
-    'nuxt-netlify-http2-server-push',
-    {
-      // Specify relative path to the dist directory and its content type
-      resources: [
-        { path: '**/*.js', as: 'script' },
-        { path: '**/*.css', as: 'style' },
-        { path: 'img/*.svg', as: 'image/svg+xml' },
-        { path: 'content/pages/*.json', as: 'application/json' },
+    [
+      'nuxt-netlify-http2-server-push',
+      {
+        // Specify relative path to the dist directory and its content type
+        resources: [
+          { path: '**/*.js', as: 'script' },
+          { path: '**/*.css', as: 'style' },
+          { path: 'img/*.svg', as: 'image/svg+xml' },
+          { path: 'content/pages/*.json', as: 'application/json' },
 
-      ]
-    }
+        ]
+      }
+    ]
   ],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'

@@ -1,6 +1,5 @@
 {
   "name": "osklad.pl",
-  "version": "1.0.0",
   "description": "Nuxt.js + Netlify CMS project",
   "author": "webo <support@webo.agency>",
   "private": true,

@@ -33,7 +33,7 @@ collections:
                 widget: "select"
                 options:
                   - { label: "1 kolumna", value: "single" }
-                  - { label: "2 kolumny ", value: "duo" }
+                  - { label: "2 kolumny", value: "duo" }
               - label: "Umiejscowienie przycisku"
                 name: "section_layout_button"
                 widget: "select"

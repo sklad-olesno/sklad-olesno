@@ -17,68 +17,34 @@
       </div>
     </div>
 
-    <div class="mw7 center">
+    <ul class="flex flex-column justify-center">
+      <li v-for="(data, key, index) in page.sections" :class="key % 2 === 0 ? 'bg-grey-1' : 'bg-off-white'">
 
-      <ul class="flex flex-wrap justify-center ph2">
-        <li class="w-33-ns ph2 mb4" v-for="section in page.sections">
-          {{ section.section_title }}
-          {{ section.section_description }}
-          <img :src="section.section_image" class=""/>
-          {{ section.section_button_title }}
-          {{ section.section_button_link }}
-        </li>
-      </ul>
+        <cLayoutSingle
+          v-if="data.section_layout_block === 'single' || typeof data.section_layout_block === 'undefined'"
+          :data="data"
+        />
 
-      <div class="bg-grey-1 pv4">
-        <div class="flex-l mhn1-l ph3 center mw7">
-          <h2 class="f2 b lh-title mb2 w-40-l">Why Kaldi?</h2>
-          <p class="w-60-l mb0">Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities.</p>
-        </div>
-      </div>
+        <cLayoutDuo
+          v-if="data.section_layout_block === 'duo'"
+          :data="data"
+        />
 
-
-      <div class="bg-off-white pv4">
-        <div class="ph3 mw7 center">
-          <h2 class="f2 b lh-title mb2">What we offer</h2>
-          <p class="mb4 center">Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone.</p>
-
-
-          <div class="tc">
-            <a href="/products" class="btn raise">See all products</a>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="bg-grey-1 pv4 mb4">
-        <div class="ph3 mw7 center">
-
-          <div class="flex-l mhn2-l">
-            <div class="w-40-l ph2-l">
-              <h2 class="f2 b lh-title mb2">Our values</h2>
-
-              <p>Coffee is an amazing part of human culture but it has a dark side too – one of colonialism and mindless abuse of natural resources and human lives. We want to turn this around and return the coffee trade to the drink’s exhilarating, empowering and unifying nature.</p>
-            </div>
-
-            <div class="w-60-l ph2-l">
-              <img :src="page.baner_image" alt="" class="mb3">
-            </div>
-          </div>
-
-          <div class="tc">
-            <a href="/values" class="btn raise">Read more</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
+      </li>
+    </ul>
 
   </div>
 </template>
 
 <script>
+  import cLayoutSingle from '~/components/layout-single.vue';
+  import cLayoutDuo from '~/components/layout-duo.vue';
+
   export default {
+    components: {
+      cLayoutSingle,
+      cLayoutDuo
+    },
     props: {
       'mainClass': {
         type: String,

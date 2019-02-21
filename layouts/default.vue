@@ -2,7 +2,10 @@
   <div class="flex flex-column min-vh-100">
     <nav class="flex flex-wrap justify-between items-center center bg-white divider-grey relative w-100" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
       <a href="/" class="pa3 db mr4 h-100 w4 flex-none mh0">
-        <img src="~/assets/logo.svg" alt="Skład opału logo" class="br0 db mb0 w-100">
+        <cLogo
+          theme="light"
+          classes="br0 db mb0 w-100"
+        />
       </a>
 
       <ul class="flex flex-wrap b grey-3 justify-center mb3 mb0-ns">
@@ -35,7 +38,10 @@
         <div class="measure-narrow center mb4">
 
           <a href="/" class="no-underline db">
-            <img src="~/assets/logo-white.svg" alt="Skład opału logo" class="db w4 center mb4 br0">
+            <cLogo
+              theme="dark"
+              classes="db w4 center mb4 br0"
+            />
           </a>
         </div>
 
@@ -82,7 +88,12 @@
 </template>
 
 <script>
+  import cLogo from '~/components/logo.vue';
+
   export default {
+    components: {
+      cLogo
+    },
   }
 </script>
 

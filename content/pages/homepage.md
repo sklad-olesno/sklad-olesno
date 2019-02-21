@@ -23,7 +23,7 @@ sections:
       tempor incididunt ut labore et dolore magna aliqua.
     section_image: /images/uploads/oskład.jpg
     section_layout_block: duo
-    section_layout_button: section_layout_button_end
+    section_layout_button: section_layout_button_text
     section_title: Mati-transport
 ---
 

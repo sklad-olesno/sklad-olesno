@@ -1,7 +1,7 @@
 <template>
   <div :class="mainClass" class="mw7 pv4 ph3 center">
 
-      <h2 class="f2 b lh-title mb2 tc" :class="data.dark ? 'grey-4' : 'primary'">
+      <h2 class="f2 b lh-title mb2 tc" :class="theme !== 'dark' ? 'grey-4' : 'primary'">
         {{ data.section_title }}
       </h2>
 

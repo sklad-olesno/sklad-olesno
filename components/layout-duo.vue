@@ -10,7 +10,11 @@
         {{ data.section_description }}
       </p>
 
-      <a v-if="data.section_layout_button === 'section_layout_button_text'" :href="data.section_button_link" class="btn raise">
+      <a
+        v-if="section_button_link !== '' && (data.section_layout_button === section_layout_button_text)"
+        :href="data.section_button_link"
+        class="btn raise"
+      >
         {{ data.section_button_title }}
       </a>
     </div>
@@ -22,7 +26,11 @@
 
       <img v-if="data.section_image !== ''" :src="data.section_image" alt="" class="mb3">
 
-      <a v-if="data.section_layout_button === 'section_layout_button_text'" :href="data.section_button_link" class="btn raise">
+      <a
+        v-if="section_button_link !== '' && (data.section_layout_button === section_layout_button_image)"
+        :href="data.section_button_link"
+        class="btn raise"
+      >
         {{ data.section_button_title }}
       </a>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div :class="mainClass" class="mw7 pv4 ph3 center">
 
-      <h2 class="f2 b lh-title mb2 tc grey-4">
+      <h2 class="f2 b lh-title mb2 tc" :class="light ? 'grey-4' : 'primary'">
         {{ data.section_title }}
       </h2>
 
@@ -44,6 +44,11 @@
       'mainClass': {
         type: String,
         default: '',
+        required: false
+      },
+      'theme': {
+        type: String,
+        default: 'light',
         required: false
       },
       'data': {

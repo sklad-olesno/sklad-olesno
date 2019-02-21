@@ -22,11 +22,13 @@
 
         <cLayoutSingle
           v-if="data.section_layout_block === 'single' || typeof data.section_layout_block === 'undefined'"
+          :theme="key % 2 === 0 ? 'dark' : 'light'"
           :data="data"
         />
 
         <cLayoutDuo
           v-if="data.section_layout_block === 'duo'"
+          :theme="key % 2 === 0 ? 'dark' : 'light'"
           :data="data"
         />
 

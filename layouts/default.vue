@@ -8,7 +8,7 @@
         />
       </a>
 
-      <ul class="flex flex-wrap b grey-3 justify-center mb3 mb0-ns">
+      <ul class="menu flex flex-wrap b grey-3 justify-center mb3 mb0-ns">
         <li>
           <nuxt-link :to="'/offer'" class="pa2 pa3-ns no-underline db">Oferta</nuxt-link>
         </li>
@@ -98,6 +98,16 @@
 </script>
 
 <style type="text/css">
+  .menu a{
+    font-size: 16px;
+  }
+
+  @media(min-width: 768px){
+    .menu a{
+      font-size: 22px;
+    }
+  }
+
   @media (max-width: 768px) {
     .divider-grey ul a:focus,.divider-grey ul a:hover {
       box-shadow: none;

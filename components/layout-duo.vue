@@ -1,12 +1,12 @@
 <template>
   <div class="flex-l flex-wrap mhn1-l ph3 center mw7 pv4 ph3" :class="mainClass">
 
-    <div class="w-40-l">
+    <div class="w-40-l flex justify-center items-center">
       <h2 class="f2 mb2 b lh-title">
         {{ data.section_title }}
       </h2>
 
-      <p class="pr3-m center" v-if="data.section_image">
+      <p class="pr3-m center flex justify-center items-center" v-if="data.section_image">
         {{ data.section_description }}
       </p>
 
@@ -16,7 +16,7 @@
     </div>
 
     <div class="w-60-l mb0">
-      <p v-if="!data.section_image" class="pl3-l center">
+      <p v-if="!data.section_image" class="pl3-m center flex justify-center items-center">
         {{ data.section_description }}
       </p>
 

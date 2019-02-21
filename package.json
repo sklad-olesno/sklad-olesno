@@ -15,11 +15,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.1",
     "nuxt": "~2.2.0",
+    "nuxt-netlify-http2-server-push": "^0.1.2",
     "nuxtdown": "^2.0.3"
   },
   "devDependencies": {
+    "@nuxtjs/axios": "^4.5.2",
     "babel-eslint": "^8.2.1",
     "cross-env": "^5.2.0",
     "eslint": "^4.15.0",

@@ -13,7 +13,7 @@
       </p>
 
       <a
-        v-if="section_button_link !== '' && data.section_button_link === 'section_layout_button_text'"
+        v-if="section_button_link !== '' && (data.section_button_link === 'section_layout_button_text')"
         :href="data.section_button_link"
         class="btn raise center tc"
       >

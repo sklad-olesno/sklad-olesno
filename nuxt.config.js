@@ -7,8 +7,8 @@ module.exports = {
         // Specify relative path to the dist directory and its content type
         resources: [
           { path: '**/*.css', as: 'style' },
-          { path: '**/img/*.svg', as: 'image/svg+xml' },
-          { path: '**/content/**/*.json', as: 'application/json' },
+          { path: '/_nuxt/img/*.svg', as: 'image/svg+xml' },
+          { path: '/_nuxt/content/pages/*.json', as: 'application/json' },
 
         ]
       }

@@ -1,26 +1,26 @@
 <template>
-  <div class="flex-l flex-wrap mhn1-l ph3 center mw7 pv4 ph3" :class="mainClass">
-    
-    <div class="w-40-l flex justify-center items-center flex-wrap">
-      <h2 class="f2 mb2 b lh-title">
+  <div class="flex-l flex-wrap items-center mhn1-l ph3 center mw7 pv4 ph3" :class="mainClass">
+
+    <div class="w-40-l flex justify-left items-center flex-wrap">
+      <h2 class="f2 mb0 b lh-title tl">
         {{ data.section_title }}
       </h2>
 
-      <p class="pr3-m center flex justify-center items-center" v-if="data.section_image">
+      <p class="pr3-m center flex justify-center items-center tl mv3" v-if="data.section_image">
         {{ data.section_description }}
       </p>
 
       <a
         v-if="data.section_button_link && (data.section_layout_button === data.section_layout_button_text)"
         :href="data.section_button_link"
-        class="btn raise"
+        class="btn raise tl"
       >
         {{ data.section_button_title }}
       </a>
     </div>
 
     <div class="w-60-l mb0 flex justify-center items-center">
-      <p v-if="!data.section_image" class="pl3-m center flex justify-center items-center">
+      <p v-if="!data.section_image" class="pl3-m center flex justify-center items-center tl mv3">
         {{ data.section_description }}
       </p>
 
@@ -29,7 +29,7 @@
       <a
         v-if="data.section_button_link && (data.section_layout_button === data.section_layout_button_image)"
         :href="data.section_button_link"
-        class="btn raise"
+        class="btn raise tl ml0"
       >
         {{ data.section_button_title }}
       </a>

@@ -1,12 +1,12 @@
 <template>
   <div :class="mainClass" class="mw7 pv4 ph3 center">
 
-      <h2 class="f2 b lh-title mb2">
+      <h2 class="f2 b lh-title mb2 tc">
         {{ data.section_title }}
       </h2>
 
       <p
-        class="center"
+        class="center tc"
         :class="(data.section_button_title !== '' ? 'mb0' : 'mb4')"
       >
         {{ data.section_description }}
@@ -15,7 +15,7 @@
       <a
         v-if="data.section_button_link && (data.section_button_link === 'section_layout_button_text')"
         :href="data.section_button_link"
-        class="btn raise center tc"
+        class="btn raise center tl"
       >
         {{ data.section_button_title }}
       </a>

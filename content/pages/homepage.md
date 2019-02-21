@@ -6,7 +6,7 @@ baner_subtitle: Lorem ipsum dolor sit
 baner_image: /images/uploads/oskład.jpg
 sections:
   - section_description: >-
-      dynamicznie rozwijająca się firma, obecna na lokalnym rynku od wielu lat.
+      Dynamicznie rozwijająca się firma, obecna na lokalnym rynku od wielu lat.
       Naszą misją jest dostarczanie klientowi najwyższej jakości opał.
       Dostarczamy produktu na terenie całego województwa Opolskiego.
     section_layout_block: duo

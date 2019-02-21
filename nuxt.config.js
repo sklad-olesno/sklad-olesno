@@ -6,7 +6,6 @@ module.exports = {
       {
         // Specify relative path to the dist directory and its content type
         resources: [
-          { path: '**/*.js', as: 'script' },
           { path: '**/*.css', as: 'style' },
           { path: 'img/*.svg', as: 'image/svg+xml' },
           { path: 'content/pages/*.json', as: 'application/json' },

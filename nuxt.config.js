@@ -7,8 +7,7 @@ module.exports = {
       resources: [
         { path: '**/*.js', as: 'script' },
         { path: '**/*.css', as: 'style' },
-        { path: 'img/logo.svg', as: 'image' },
-        { path: 'img/logo-white.svg', as: 'image' },
+        { path: 'img/*.svg', as: 'image/svg+xml' },
         { path: 'content/pages/*.json', as: 'application/json' },
 
       ]

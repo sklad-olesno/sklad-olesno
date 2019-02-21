@@ -11,7 +11,7 @@
       </p>
 
       <a
-        v-if="section_button_link !== '' && (data.section_layout_button === section_layout_button_text)"
+        v-if="data.section_button_link !== '' && (data.section_layout_button === data.section_layout_button_text)"
         :href="data.section_button_link"
         class="btn raise"
       >
@@ -27,7 +27,7 @@
       <img v-if="data.section_image !== ''" :src="data.section_image" alt="" class="mb3">
 
       <a
-        v-if="section_button_link !== '' && (data.section_layout_button === section_layout_button_image)"
+        v-if="data.section_button_link !== '' && (data.section_layout_button === data.section_layout_button_image)"
         :href="data.section_button_link"
         class="btn raise"
       >
@@ -35,7 +35,10 @@
       </a>
     </div>
 
-    <div v-if="data.section_layout_button === 'section_layout_button_end'" class="w-100-l tc">
+    <div
+      v-if="data.section_layout_button === data.section_layout_button_end"
+      class="w-100-l tc"
+    >
       <a :href="data.section_button_link" class="btn raise">{{ data.section_button_title }}</a>
     </div>
 

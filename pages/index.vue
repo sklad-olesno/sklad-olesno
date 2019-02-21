@@ -3,12 +3,12 @@
     <div class="pv5 pv6-l ph3 bg-center cover" v-bind:style="{ backgroundImage: 'url(' + page.baner_image + ')' }">
       <div class="mw7 center ph3">
         <div class="db mb3">
-          <div class="mw7 relative bg-fix-primary mb3">
+          <div class="mw7 relative bg-fix-primary mb3 tl">
             <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
               {{ page.baner_title }}
             </h1>
           </div>
-          <div class="mw7 relative bg-fix-primary">
+          <div class="mw7 relative bg-fix-primary tl">
             <p class="b f4 di lh-title mb3 white mw6 bg-primary">
               {{ page.baner_subtitle }}
             </p>

@@ -109,4 +109,4 @@ collections:
           - {label: "Ulica", name: company_street, widget: text}
           - {label: "Kod pocztowy", name: company_zip_code, widget: string}
           - {label: "Miasto", name: company_city, widget: string}
-          - {label: "Godziny pracy", name: company_hours, widget: image}
+          - {label: "Godziny pracy", name: company_hours, widget: text}

@@ -15,7 +15,7 @@
       </a>
     </div>
 
-    <div class="w-60-l mb0">
+    <div class="w-60-l mb0 flex justify-center items-center">
       <p v-if="!data.section_image" class="pl3-m center flex justify-center items-center">
         {{ data.section_description }}
       </p>

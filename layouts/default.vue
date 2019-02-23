@@ -1,5 +1,6 @@
 <template>
   <div class="flex flex-column min-vh-100">
+
     <nav class="flex flex-wrap justify-between items-center center bg-white divider-grey relative w-100" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
       <a href="/" class="pa3 db mr4 h-100 w4 flex-none mh0">
         <cLogo
@@ -60,16 +61,20 @@
 
           <div>
             <h3 class="f4 b lh-title mb1 primary">Adres</h3>
-            <p>
-
-            </p>
+              <address>
+              {{ address.company_street }}<br/>
+              {{ address.company_city }} {{ address.company_zip_code }}
+              </address>
+              <br/>
+              {{ address.company_hours_array[0] }}<br/>
+              {{ address.company_hours_array[1] }}
           </div>
 
           <div>
             <h3 class="f4 b lh-title mb2 primary">Kontakt</h3>
             <ul class="mhn2">
               <li class="dib ph2 raise">
-                <a href="#" class="link bg-white black db relative br-100 pa2">
+                <a :href="contact.facebook" class="link bg-white black db relative br-100 pa2">
                   <svg width="16px" height="16px" class="db">
                     <use xlink:href="#facebook"></use>
                   </svg>
@@ -81,7 +86,7 @@
         </div>
       </div>
 
-      <p class="tc grey-2 center f6">2019 © składopału.pl</p>
+      <p class="tc grey-2 center f6">{{ new Date().getFullYear() }} © {{ address.company_name }}</p>
 
     </footer>
   </div>
@@ -89,11 +94,24 @@
 
 <script>
   import cLogo from '~/components/logo.vue';
+  import contactData from '~/content/settings/contact.md';
+  import adressData from '~/content/settings/adress.md';
 
   export default {
     components: {
       cLogo
     },
+    computed: {
+      address() {
+        return this.$store.getters.address
+      },
+      contact() {
+        return this.$store.getters.contact
+      }
+    },
+    mounted(){
+
+    }
   }
 </script>
 

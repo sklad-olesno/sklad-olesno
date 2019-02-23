@@ -12,8 +12,17 @@ module.exports = {
 
         ]
       }
-    ]
+    ],
+    '@nuxtjs/markdownit'
   ],
+  markdownit: {
+    preset: 'default',
+    html: true,
+    typographer: true,
+    linkify: true,
+    breaks: true,
+    injected: true
+  },
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
   },

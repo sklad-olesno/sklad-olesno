@@ -103,10 +103,11 @@ collections:
           - {label: "Facebook", name: facebook, widget: string}
       - label: "Adres"
         name: "homepage"
-        file: "content/settings/adress.md"
+        file: "content/settings/address.md"
         fields:
           - {label: "Nazwa firmy", name: company_name, widget: string, required: true}
           - {label: "Ulica", name: company_street, widget: text}
           - {label: "Kod pocztowy", name: company_zip_code, widget: string}
           - {label: "Miasto", name: company_city, widget: string}
           - {label: "Godziny pracy", name: company_hours, widget: text}
+          - {label: "Copyright - tekst w stopce", name: copyright, widget: text}

@@ -72,7 +72,7 @@
     },
     asyncData: async ({ app, route, payload }) => {
       return {
-        page: (await app.$content("/pages").get('homepage')) || payload
+        page: (await app.$content("/pages").get(route.path + 'homepage')) || payload
       };
     }
   };

@@ -31,7 +31,7 @@
         <div class="mb4">
           <h4 class="f3 b lh-title mb3 tc">Drop us a line below</h4>
 
-          <form action="">
+          <form action="" data-netlify="true" data-netlify-recaptcha="true">
             <div class="flex-l mhn1-l">
 
               <div class="ph1-l w-50-l">
@@ -55,12 +55,13 @@
               <label for="message">Your message</label>
             </fieldset>
 
+            <div data-netlify-recaptcha="true"></div>
+
             <div class="tc">
               <button type="submit" class="btn w-100 w-auto-ns raise">Submit</button>
             </div>
           </form>
         </div>
-
 
       </div>
     </div>

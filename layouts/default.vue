@@ -32,7 +32,7 @@
       <nuxt class="center mw7"/>
     </main>
 
-    <footer class="bg-black ph3 pv4 white">
+    <footer class="bg-black ph3 pt4 pb1 white">
 
       <div class="mw7 center pt3">
 

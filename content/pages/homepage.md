@@ -1,8 +1,8 @@
 ---
-title: Strona główna
-description: skład opału
-baner_title: Skład Opału Olesno
-baner_subtitle: Lorem ipsum dolor sit
+title: Skład Opału - Olesno
+description: 'Lokalny dostawca, preferencyjne ceny'
+baner_title: Skład Opału - Olesno
+baner_subtitle: 'Lokalny dostawca, preferencyjne ceny'
 baner_image: /images/uploads/oskład.jpg
 sections:
   - section_description: >-

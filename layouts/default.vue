@@ -86,7 +86,7 @@
         </div>
       </div>
 
-      <p class="tc grey-2 center f6">{{ new Date().getFullYear() }} © {{ address.company_name }}</p>
+      <p class="tc grey-2 center f6 mt4 mb0">{{ new Date().getFullYear() }} © {{ address.company_name }}</p>
 
     </footer>
   </div>
@@ -94,8 +94,6 @@
 
 <script>
   import cLogo from '~/components/logo.vue';
-  import contactData from '~/content/settings/contact.md';
-  import adressData from '~/content/settings/adress.md';
 
   export default {
     components: {

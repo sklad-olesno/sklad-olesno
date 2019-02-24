@@ -46,6 +46,10 @@
         ]
       };
     },
+    mounted() {
+      this.$el.classList.remove('mw7');
+      this.$el.classList.remove('center');
+    },
     asyncData: async ({ app, route, payload }) => {
       return {
         page: (await app.$content("/pages").get(route.path)) || payload

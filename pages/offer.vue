@@ -1,7 +1,7 @@
 <template>
   <div class="offer-block">
 
-    <h1 class="f1 primary tc ttu fw6 mt5 mb3">Oferta</h1>
+    <h1 class="f1 primary tc ttu fw6 mt5 mb3 lh-solid">Oferta</h1>
 
     <nuxtdown-body class="body cms" :body="page.body"/>
   </div>

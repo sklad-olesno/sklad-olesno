@@ -1,7 +1,7 @@
 <template>
   <div class="contact-block">
 
-    <h1 class="f1 primary tc ttu fw6 mt5 mb3">Kontakt</h1>
+    <h1 class="f1 primary tc ttu fw6 mt5 mb3 lh-solid">Kontakt</h1>
 
     <nuxtdown-body v-if="typeof page.body_before !== 'undefined'" class="cms tc mb4 mb5-l" :body="page.body_before"/>
 

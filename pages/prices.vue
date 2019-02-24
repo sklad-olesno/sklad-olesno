@@ -1,7 +1,7 @@
 <template>
   <div class="prices-block">
 
-    <h1 class="f1 primary tc ttu fw6 mt5">Cennik</h1>
+    <h1 class="f1 primary tc ttu fw6 mt5 lh-solid">Cennik</h1>
 
     <nuxtdown-body class="cms tc mb5 mt3 ph2" v-if="typeof page.body_before !== 'undefined'" :body="page.body_before"/>
 

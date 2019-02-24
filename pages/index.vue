@@ -4,7 +4,7 @@
       <div class="mw7 center ph3">
         <div class="db mb3">
           <div class="mw7 relative bg-fix-primary mb3 tl">
-            <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
+            <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary lh-solid">
               {{ page.baner_title }}
             </h1>
           </div>

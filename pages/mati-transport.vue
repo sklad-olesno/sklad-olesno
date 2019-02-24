@@ -26,25 +26,32 @@
 </template>
 
 <script>
-export default {
-  head: function() {
-    return {
-      title: `${this.page.title}`,
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: this.page.description
-        }
-      ]
-    };
-  },
-  asyncData: async ({ app, route, payload }) => {
-    return {
-      page: (await app.$content("/pages").get(route.path)) || payload
-    };
-  }
-};
+  import cLayoutSingle from '~/components/layout-single.vue';
+  import cLayoutDuo from '~/components/layout-duo.vue';
+
+  export default {
+    components: {
+      cLayoutSingle,
+      cLayoutDuo
+    },
+    head: function() {
+      return {
+        title: `${this.page.title}`,
+        meta: [
+          {
+            hid: "description",
+            name: "description",
+            content: this.page.description
+          }
+        ]
+      };
+    },
+    asyncData: async ({ app, route, payload }) => {
+      return {
+        page: (await app.$content("/pages").get(route.path)) || payload
+      };
+    }
+  };
 </script>
 
 <style type="text/css">

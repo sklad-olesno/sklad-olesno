@@ -1,5 +1,7 @@
 <template>
-  <div class="example-content">
+  <div class="transport-block">
+    <h1 class="f1 primary tc ttu fw6 mt5 mb3">Transport</h1>
+
     <nuxtdown-body class="body" :body="page.body"/>
   </div>
 </template>
@@ -25,3 +27,10 @@ export default {
   }
 };
 </script>
+
+<style type="text/css">
+  .transport-block .body p{
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>

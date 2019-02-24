@@ -1,5 +1,8 @@
 <template>
-  <div class="example-content">
+  <div class="mati-transport-block">
+
+    <h1 class="f1 primary tc ttu fw6 mt5 mb3">Mati transport</h1>
+
     <nuxtdown-body class="body" :body="page.body"/>
   </div>
 </template>
@@ -25,3 +28,10 @@ export default {
   }
 };
 </script>
+
+<style type="text/css">
+  .mati-transport-block .body p{
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>

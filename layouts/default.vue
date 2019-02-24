@@ -124,6 +124,10 @@
     }
   }
 
+  .menu .nuxt-link-exact-active{
+    box-shadow: inset 0 -4px 0 #F1C007;
+  }
+
   @media (max-width: 768px) {
     .divider-grey ul a:focus,.divider-grey ul a:hover {
       box-shadow: none;

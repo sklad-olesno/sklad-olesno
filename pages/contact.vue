@@ -1,28 +1,29 @@
 <template>
   <div class="contact-block">
 
-    <h1 class="f1 primary tc ttu fw6 mt5">Kontakt</h1>
+    <h1 class="f1 primary tc ttu fw6 mt5 mb3">Kontakt</h1>
 
-    <nuxtdown-body v-if="typeof page.body_before !== 'undefined'" class="cms tc mb5 mt3" :body="page.body_before"/>
+    <nuxtdown-body v-if="typeof page.body_before !== 'undefined'" class="cms tc mb5" :body="page.body_before"/>
 
     <div class="ph3 bg-off-white">
-      <div class="center mw6 pv3">
-
-        <p>We’d love to get in touch with you and hear your ideas and questions. We strive to grow and improve constantly and your feedback is valuable for us.</p>
-
-        <h3 class="f4 b lh-title mb2">How can I get…?</h3>
-        <p>You can also use the form below for any inquiries about coffee availability, monthly subscriptions and scheduling a 1-on-1 session with our baristas. Don’t be shy, drop us a line!</p>
+      <div class="center mw6 pb3">
 
         <div class="flex-ns mb3">
 
-          <div>
-            <h4 class="f4 b lh-title mb2 primary">Location</h4>
-            <p>3153 Lynn Avenue, South San Francisco, California 94080</p>
+          <div class="ph1-l w-50-l">
+            <h4 class="f4 b lh-title mb2 primary">Lokalizacja</h4>
+            <address>
+              {{ address.company_street }}<br/>
+              {{ address.company_city }} {{ address.company_zip_code }}
+            </address>
           </div>
 
-          <div>
-            <h4 class="f4 b lh-title mb2 primary">Working hours</h4>
-            <p>Monday – Saturday: 9AM – 7PM We’re closed on Sundays</p>
+          <div class="ph1-l w-50-l">
+            <h4 class="f4 b lh-title mb2 primary">Godziny pracy</h4>
+            <p>
+              {{ address.company_hours_array[0] }}<br/>
+              {{ address.company_hours_array[1] }}
+            </p>
           </div>
 
         </div>
@@ -32,30 +33,42 @@
           <h4 class="f3 b lh-title mb3 tc">Drop us a line below</h4>
 
           <form action="" data-netlify="true" data-netlify-recaptcha="true">
-            <div class="flex-l mhn1-l">
 
+            <div class="flex-l mhn1-l">
               <div class="ph1-l w-50-l">
-                <fieldset>
-                  <input type="text" id="name" placeholder="Name" class="w-100 mb2">
-                  <label for="name">Name</label>
-                </fieldset>
+                <input type="text" id="name" placeholder="Name" class="w-100 mb2">
+                <label for="name">Name</label>
               </div>
 
               <div class="ph1-l w-50-l">
-                <fieldset>
-                  <input type="email" id="email" placeholder="Email" class="w-100 mb2">
-                  <label for="email">Email</label>
-                </fieldset>
+                <input type="email" id="email" placeholder="Email" class="w-100 mb2">
+                <label for="email">Email</label>
+              </div>
+            </div>
+
+            <div>
+              <textarea name="name" placeholder="Your message" rows="8" cols="80" id="message" class="w-100"></textarea>
+              <label for="message">Your message</label>
+            </div>
+
+            <div class="flex-l mhn1-l">
+              <div class="ph1-l w-50-l flex items-center">
+
+                <input type="checkbox" id="checkbox" placeholder="Name" class="mr2" value="agree">
+                <span class="f6">
+                  Zgadzam się na...
+                </span>
+                <label for="checkbox">
+                  Zgadzam się
+                </label>
+              </div>
+
+              <div class="ph1-l w-50-l">
+                <div data-netlify-recaptcha="true"></div>
               </div>
             </div>
 
 
-            <fieldset>
-              <textarea name="name" placeholder="Your message" rows="8" cols="80" id="message" class="w-100"></textarea>
-              <label for="message">Your message</label>
-            </fieldset>
-
-            <div data-netlify-recaptcha="true"></div>
 
             <div class="tc">
               <button type="submit" class="btn w-100 w-auto-ns raise">Submit</button>
@@ -85,6 +98,14 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    address() {
+      return this.$store.getters.address
+    },
+    contact() {
+      return this.$store.getters.contact
+    }
   },
   asyncData: async ({ app, route, payload }) => {
     return {

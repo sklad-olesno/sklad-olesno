@@ -76,7 +76,7 @@
 
 
 
-            <div class="tc">
+            <div class="tc mt4">
               <button type="submit" class="btn w-100 w-auto-ns raise">Wyślij zapytanie</button>
             </div>
           </form>

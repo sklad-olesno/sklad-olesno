@@ -35,13 +35,13 @@
           <form action="" data-netlify="true" data-netlify-recaptcha="true">
 
             <div class="flex-l mhn1-l">
-              <div class="ph1-l w-50-l">
-                <input type="text" id="name" placeholder="Name" class="w-100 mb2">
+              <div class="ph1-l w-50-l mb3">
+                <input type="text" id="name" placeholder="Name" class="mb2 flex-auto w-100 ph0 indent">
                 <label for="name">Name</label>
               </div>
 
-              <div class="ph1-l w-50-l">
-                <input type="email" id="email" placeholder="Email" class="w-100 mb2">
+              <div class="ph1-l w-50-l mb3">
+                <input type="email" id="email" placeholder="Email" class="mb2 flex-auto w-100 ph0 indent">
                 <label for="email">Email</label>
               </div>
             </div>

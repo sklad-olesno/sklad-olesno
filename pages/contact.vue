@@ -36,19 +36,19 @@
 
             <div class="flex-l mhn1-l">
               <div class="ph1-l w-50-l mb3">
-                <input type="text" id="name" placeholder="Name" class="mb2 flex-auto w-100 ph0 indent">
-                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Imię" class="mb2 flex-auto w-100 ph0 indent">
+                <label for="name">Imię</label>
               </div>
 
               <div class="ph1-l w-50-l mb3">
                 <input type="email" id="email" placeholder="Email" class="mb2 flex-auto w-100 ph0 indent">
-                <label for="email">Email</label>
+                <label for="email">Adres Email</label>
               </div>
             </div>
 
             <div>
-              <textarea name="name" placeholder="Your message" rows="8" cols="80" id="message" class="w-100"></textarea>
-              <label for="message">Your message</label>
+              <textarea name="name" placeholder="Wiadomość" rows="8" cols="80" id="message" class="w-100"></textarea>
+              <label for="message">Wiadomość</label>
             </div>
 
             <div class="flex-l mhn1-l">

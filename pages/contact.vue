@@ -46,13 +46,13 @@
               </div>
             </div>
 
-            <div>
+            <div class="flex flex-auto mb2">
               <textarea name="name" placeholder="Wiadomość" rows="8" cols="80" id="message" class="w-100"></textarea>
               <label for="message">Wiadomość</label>
             </div>
 
             <div class="flex-l mhn1-l">
-              <div class="ph1-l w-50-l flex items-center">
+              <div class="ph1-l mb3 flex-auto flex items-center">
 
                 <input
                   type="checkbox"
@@ -69,7 +69,7 @@
                 </label>
               </div>
 
-              <div class="ph1-l w-50-l">
+              <div class="ph1-l mb3 flex-auto">
                 <div data-netlify-recaptcha="true"></div>
               </div>
             </div>

@@ -53,7 +53,7 @@
 
             <div class="flex-l">
 
-              <div class="mb3 flex-auto flex items-center">
+              <div class="mb3 mr2 flex-auto flex items-center">
                 <input
                   type="checkbox"
                   id="checkbox"

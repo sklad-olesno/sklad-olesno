@@ -6,7 +6,7 @@
         {{ data.section_title }}
       </h2>
 
-      <p class="pr3-m center flex justify-center items-center tl mv3 grey-4" v-if="data.section_image">
+      <p class="pr3-m flex justify-center items-center tl mv3 grey-4" v-if="data.section_image">
         {{ data.section_description }}
       </p>
 

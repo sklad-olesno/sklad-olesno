@@ -69,6 +69,7 @@
     mounted() {
       this.$el.classList.remove('mw7');
       this.$el.classList.remove('center');
+      this.$el.classList.remove('pb5');
     },
     asyncData: async ({ app, route, payload }) => {
       return {

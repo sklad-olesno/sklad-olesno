@@ -74,10 +74,14 @@
               </div>
             </div>
 
-
-
             <div class="tc mt4">
-              <button type="submit" class="btn w-100 w-auto-ns raise">Wyślij zapytanie</button>
+              <button
+                type="submit"
+                class="btn w-100 w-auto-ns raise"
+                :disabled="!legalAgreement"
+              >
+                Wyślij zapytanie
+              </button>
             </div>
           </form>
         </div>
@@ -114,7 +118,7 @@ export default {
     }
   },
   data: () => ({
-    legalAgreement: []
+    legalAgreement: false
   }),
   asyncData: async ({ app, route, payload }) => {
     return {
@@ -143,5 +147,11 @@ export default {
 
   .flex-zero{
     flex: 0 0 auto;
+  }
+
+  button[type="submit"][disabled]{
+    cursor: not-allowed;
+    color: #ccc;
+    box-shadow: inset 0 0 0 2px #ccc;
   }
 </style>

@@ -29,7 +29,7 @@
     </nav>
 
     <main class="flex-auto tc">
-      <nuxt class="center mw7"/>
+      <nuxt class="center mw7 pb5"/>
     </main>
 
     <footer class="bg-black ph3 pt4 pb1 white">
@@ -106,9 +106,6 @@
       contact() {
         return this.$store.getters.contact
       }
-    },
-    mounted(){
-
     }
   }
 </script>

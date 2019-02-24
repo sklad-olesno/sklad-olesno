@@ -40,9 +40,9 @@
           </ul>
 
       </li>
-      <li class="w-33-ns ph2 mb4"></li>
-      <li class="w-33-ns ph2 mb4"></li>
-      <li class="w-33-ns ph2 mb4"></li>
+      <li class="w-33-ns ph2"></li>
+      <li class="w-33-ns ph2"></li>
+      <li class="w-33-ns ph2"></li>
     </ul>
 
     <nuxtdown-body class="cms tc mb5 mt5" v-if="typeof page.body_after !== 'undefined'" :body="page.body_after"/>

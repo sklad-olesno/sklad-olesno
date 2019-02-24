@@ -13,8 +13,17 @@ module.exports = {
         ]
       }
     ],
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    [
+      '@nuxtjs/pwa', {
+        icon: false
+      }
+    ],
   ],
+  manifest: {
+    lang: 'pl',
+    display: "browser",
+  },
   markdownit: {
     preset: 'default',
     html: true,

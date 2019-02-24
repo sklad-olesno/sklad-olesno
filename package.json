@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.3",
+    "@nuxtjs/pwa": "^3.0.0-beta.8",
     "nuxt": "~2.2.0",
     "nuxt-netlify-http2-server-push": "^0.1.2",
     "nuxtdown": "^2.0.3"

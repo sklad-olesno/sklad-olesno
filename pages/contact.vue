@@ -30,7 +30,7 @@
 
 
         <div class="mb4">
-          <h4 class="f3 b lh-title mb3 tc">Drop us a line below</h4>
+          <h4 class="f3 b lh-title mb3 tc">Napisz do nas</h4>
 
           <form action="" data-netlify="true" data-netlify-recaptcha="true">
 

@@ -6,7 +6,7 @@
     <nuxtdown-body class="body" :body="page.body"/>
 
     <ul class="flex flex-column justify-center">
-      <li v-for="(data, key, index) in page.sections" :class="key % 2 === 0 ? 'bg-grey-1' : 'bg-off-white'">
+      <li v-for="(data, key, index) in page.sections" :class="key % 2 !== 0 ? 'bg-grey-1' : 'bg-off-white'">
 
         <cLayoutSingle
           v-if="data.section_layout_block === 'single' || typeof data.section_layout_block === 'undefined'"

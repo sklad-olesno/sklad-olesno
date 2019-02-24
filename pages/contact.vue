@@ -3,24 +3,24 @@
 
     <h1 class="f1 primary tc ttu fw6 mt5 mb3">Kontakt</h1>
 
-    <nuxtdown-body v-if="typeof page.body_before !== 'undefined'" class="cms tc mb5" :body="page.body_before"/>
+    <nuxtdown-body v-if="typeof page.body_before !== 'undefined'" class="cms tc mb4 mb5-l" :body="page.body_before"/>
 
     <div class="ph3 bg-off-white">
       <div class="center mw6 pb3">
 
         <div class="flex-ns mb3">
 
-          <div class="ph1-l w-50-l">
+          <div class="ph1-ns w-50-ns">
             <h4 class="f4 b lh-title mb2 primary">Lokalizacja</h4>
-            <address>
+            <address class="mb4">
               {{ address.company_street }}<br/>
               {{ address.company_city }} {{ address.company_zip_code }}
             </address>
           </div>
 
-          <div class="ph1-l w-50-l">
+          <div class="ph1-ns w-50-ns">
             <h4 class="f4 b lh-title mb2 primary">Godziny pracy</h4>
-            <p>
+            <p class="mb4">
               {{ address.company_hours_array[0] }}<br/>
               {{ address.company_hours_array[1] }}
             </p>
@@ -89,9 +89,7 @@
       </div>
     </div>
 
-    <nuxtdown-body v-if="typeof page.body_after !== 'undefined'" class="cms tc mb5 mt3" :body="page.body_after"/>
-
-    <span v-if="typeof page.body_after === 'undefined'" class="db mb5"> </span>
+    <nuxtdown-body v-if="typeof page.body_after !== 'undefined'" class="cms tc" :body="page.body_after"/>
   </div>
 </template>
 

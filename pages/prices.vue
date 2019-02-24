@@ -64,6 +64,9 @@ export default {
       ]
     };
   },
+  mounted() {
+    this.$el.classList.remove('pb5');
+  },
   asyncData: async ({ app, route, payload }) => {
     return {
       page: (await app.$content("/pages").get(route.path)) || payload

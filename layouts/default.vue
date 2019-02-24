@@ -9,7 +9,7 @@
         />
       </a>
 
-      <ul class="menu flex flex-wrap b grey-3 justify-center mb3 mb0-ns">
+      <ul class="menu flex flex-wrap b grey-3 justify-center">
         <li>
           <nuxt-link :to="'/offer'" class="pa2 pa3-ns no-underline db">Oferta</nuxt-link>
         </li>
@@ -59,7 +59,7 @@
             </ul>
           </div>
 
-          <div>
+          <div class="mb3">
             <h3 class="f4 b lh-title mb1 primary">Adres</h3>
               <address>
               {{ address.company_street }}<br/>

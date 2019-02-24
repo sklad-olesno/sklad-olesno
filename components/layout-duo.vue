@@ -1,12 +1,12 @@
 <template>
   <div class="flex-l flex-wrap items-center mhn1-l ph3 center mw7 pv4 ph3" :class="mainClass">
 
-    <div class="w-40-l flex justify-left items-center flex-wrap">
-      <h2 class="f2 mb0 b lh-title tl" :class="theme === 'dark' ? 'grey-4' : 'primary'">
+    <div class="w-40-l flex justify-center justify-left-l items-center flex-wrap">
+      <h2 class="f2 mb0 b lh-title tc tl-l w-100" :class="theme === 'dark' ? 'grey-4' : 'primary'">
         {{ data.section_title }}
       </h2>
 
-      <p class="pr3-m flex justify-center items-center tl mv3 grey-4" v-if="data.section_image">
+      <p class="pr3-l flex justify-center items-center justify-start-l tl mv3 grey-4 w-100" v-if="data.section_image">
         {{ data.section_description }}
       </p>
 
@@ -20,7 +20,7 @@
     </div>
 
     <div class="w-60-l mb0 flex justify-center items-center">
-      <p v-if="!data.section_image" class="pl3-m center flex justify-center items-center tl mv3 grey-4">
+      <p v-if="!data.section_image" class="pl3-m center flex justify-center justify-start-l items-center tl mv3 grey-4">
         {{ data.section_description }}
       </p>
 

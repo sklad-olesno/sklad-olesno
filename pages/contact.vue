@@ -54,9 +54,15 @@
             <div class="flex-l mhn1-l">
               <div class="ph1-l w-50-l flex items-center">
 
-                <input type="checkbox" id="checkbox" placeholder="Name" class="mr2" value="agree">
-                <span class="f6">
-                  Zgadzam się na...
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  placeholder="Name"
+                  class="mr2 input-reset"
+                  v-model="legalAgreement"
+                >
+                <span class="small-font tl" @click="legalAgreement = !legalAgreement">
+                  Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w powyższym formularzu, przez <b>{{ address.company_name }}</b> z siedzibą w Oleśnie. Wiem że w każdej chwili bedę mógł odwołać zgodę
                 </span>
                 <label for="checkbox">
                   Zgadzam się
@@ -71,7 +77,7 @@
 
 
             <div class="tc">
-              <button type="submit" class="btn w-100 w-auto-ns raise">Submit</button>
+              <button type="submit" class="btn w-100 w-auto-ns raise">Wyślij zapytanie</button>
             </div>
           </form>
         </div>
@@ -107,6 +113,9 @@ export default {
       return this.$store.getters.contact
     }
   },
+  data: () => ({
+    legalAgreement: []
+  }),
   asyncData: async ({ app, route, payload }) => {
     return {
       page: (await app.$content("/pages").get(route.path)) || payload
@@ -114,3 +123,21 @@ export default {
   }
 };
 </script>
+
+<style type="text/css">
+  .small-font{
+    font-size: 10px;
+  }
+
+  input[type=checkbox],
+  input[type=checkbox]:focus,
+  input[type=checkbox]:hover,
+  input[type=checkbox]:focus:hover{
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  input[type=checkbox]:checked{
+    background: #F1C007;
+  }
+</style>

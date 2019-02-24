@@ -41,6 +41,6 @@ prices:
     name: Ekogroszek
     non_packed: 770 zł
     packed: 840 zł
-body_after: _
+body_after: ''
 ---
 

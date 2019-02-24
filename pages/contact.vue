@@ -51,9 +51,9 @@
               <label for="message">Wiadomość</label>
             </div>
 
-            <div class="flex-l mhn1-l">
-              <div class="ph1-l mb3 flex-auto flex items-center">
+            <div class="flex-l">
 
+              <div class="mb3 flex-auto flex items-center">
                 <input
                   type="checkbox"
                   id="checkbox"
@@ -69,7 +69,7 @@
                 </label>
               </div>
 
-              <div class="ph1-l mb3 flex-auto">
+              <div class="flex-zero mb3 flex-auto">
                 <div data-netlify-recaptcha="true"></div>
               </div>
             </div>
@@ -139,5 +139,9 @@ export default {
 
   input[type=checkbox]:checked{
     background: #F1C007;
+  }
+
+  .flex-zero{
+    flex: 0 0 auto;
   }
 </style>

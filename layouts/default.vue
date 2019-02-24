@@ -19,7 +19,7 @@
         <li>
           <nuxt-link :to="'/transport'" class="pa2 pa3-ns no-underline db">Transport</nuxt-link>
         </li>
-        <li>
+        <li class="special">
           <nuxt-link :to="'/mati-transport'" class="pa2 pa3-ns no-underline db">Mati-Transport</nuxt-link>
         </li>
         <li>
@@ -129,5 +129,9 @@
     .divider-grey ul a:focus,.divider-grey ul a:hover {
       box-shadow: none;
     }
+  }
+
+  .special a{
+    color: #0125a0;
   }
 </style>

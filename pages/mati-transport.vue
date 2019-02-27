@@ -47,6 +47,7 @@
       };
     },
     mounted() {
+      this.page = this.page.split(/\n/).join('<br/>');
       this.$el.classList.remove('mw7');
       this.$el.classList.remove('center');
       this.$el.classList.remove('pb5');

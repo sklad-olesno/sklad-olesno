@@ -1,8 +1,8 @@
 <template>
-  <div class="transport-block mw7 ph4">
-    <h1 class="f1 primary tl ttu fw6 mt5 mb3 lh-solid">Transport</h1>
+  <div class="mw7 ph4">
+    <h1 class="f1 primary tc ttu fw6 mt5 mb3 lh-solid">Transport</h1>
 
-    <nuxtdown-body class="body" :body="page.body"/>
+    <nuxtdown-body class="body cms" :body="page.body"/>
   </div>
 </template>
 
@@ -27,10 +27,3 @@ export default {
   }
 };
 </script>
-
-<style type="text/css">
-  .transport-block .body p{
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>

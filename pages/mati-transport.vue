@@ -1,9 +1,9 @@
 <template>
   <div class="mati-transport-block">
 
-    <h1 class="f1 primary tl ttu fw6 mt5 mb3 lh-solid">Mati transport</h1>
+    <h1 class="f1 primary tc ttu fw6 mt5 mb3 lh-solid">Mati transport</h1>
 
-    <nuxtdown-body class="body" :body="page.body"/>
+    <nuxtdown-body class="body cms" :body="page.body"/>
 
     <ul class="flex flex-column justify-center">
       <li v-for="(data, key, index) in page.sections" :class="key % 2 !== 0 ? 'bg-grey-1' : 'bg-off-white'">

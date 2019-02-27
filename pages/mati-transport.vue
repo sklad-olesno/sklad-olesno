@@ -1,7 +1,7 @@
 <template>
   <div class="mati-transport-block">
 
-    <h1 class="f1 primary tc ttu fw6 mt5 mb3 lh-solid">Mati transport</h1>
+    <h1 class="f1 primary tl ttu fw6 mt5 mb3 lh-solid">Mati transport</h1>
 
     <nuxtdown-body class="body" :body="page.body"/>
 

@@ -1,5 +1,15 @@
 ---
 title: Oferta
-description: Oferta
+description: >-
+  Nasza oferta składa się produkty opałowe wysokiej jakości. Oferujemy również
+  transport gratis na terenie Olesna jak również możemy indywidualnie i
+  korzystnie wycenić dowóz w regionie województwa opolskiego.
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Nasz skład opału oferuje:
+
+* Orzech I
+* Orzech II
+* Groszek
+* Kostka
+* Ekogroszek
+* Miał

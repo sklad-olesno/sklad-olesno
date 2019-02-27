@@ -6,9 +6,12 @@ baner_subtitle: 'Lokalny dostawca, preferencyjne ceny'
 baner_image: /images/uploads/oskład.jpg
 sections:
   - section_description: >-
-      Dynamicznie rozwijająca się firma, obecna na lokalnym rynku od wielu lat.
-      Naszą misją jest dostarczanie klientowi najwyższej jakości opał.
+      Dynamicznie rozwijająca się firma, obecna od niedawana na lokalnym rynku.
+      Naszą misją jest dostarczanie klientowi najwyższej jakości opału.
       Dostarczamy produktu na terenie całego województwa Opolskiego.
+
+
+      Dowóz na terenie Olesna - GRATIS
     section_layout_block: duo
     section_title: Skład Opału - Olesno
   - section_button_link: /offer

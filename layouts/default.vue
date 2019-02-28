@@ -132,6 +132,6 @@
   }
 
   .special a{
-    color: #0125a0;
+    color: #2C57E8;
   }
 </style>

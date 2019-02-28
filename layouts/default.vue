@@ -81,9 +81,9 @@
                   </svg>
                 </a>
               </li>
-              <li class="dib ph2 raise">
-                <a v-if="contact.telephone" :href="'tel:' + contact.telephone.split(' ').join('')" class="link bg-white black db relative pa1 mb3">
-                  {{ contact.telephone }}
+              <li class="dib ph2">
+                <a v-if="contact.telephone" :href="'tel:' + contact.telephone.split(' ').join('')" class="link white db relative pa1 mb3">
+                  TEL: {{ contact.telephone }}
                 </a>
               </li>
             </ul>

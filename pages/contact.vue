@@ -13,7 +13,7 @@
           <div class="ph1-ns w-50-ns">
             <h4 class="f4 b lh-title mb2 primary">Lokalizacja</h4>
             <address class="mb4">
-              <span v-html="address.company_street"></span>
+              <span class="db" v-html="address.company_street"></span>
               {{ address.company_zip_code }} {{ address.company_city }}
             </address>
           </div>

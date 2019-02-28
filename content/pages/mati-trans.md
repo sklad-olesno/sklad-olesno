@@ -7,8 +7,8 @@ description: >-
   na terenie Olesna jak również w województwie opolskim a także terytorium
   Polski. 
 sections:
-  - section_button_link: /contact
-    section_button_title: Składam ofertę
+  - section_button_link: ''
+    section_button_title: ''
     section_description: |-
       Sprzedaż i transport:
       - piasku i żwiru
@@ -22,7 +22,7 @@ sections:
       - inne kruszywa
     section_image: /images/uploads/oskład.jpg
     section_layout_block: duo
-    section_layout_button: section_layout_button_end
+    section_layout_button: ''
     section_title: Oferta
 ---
 

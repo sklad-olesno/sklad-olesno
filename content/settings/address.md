@@ -1,6 +1,8 @@
 ---
 company_name: Usługi Transportowe Mati Trans Matthias Spyra
-company_street: ul. Przemysłowa 8
+company_street: |-
+  ul. Przemysłowa 8
+  Poczta: Olesno
 company_zip_code: 46-300
 company_city: Świercze
 company_hours: |-

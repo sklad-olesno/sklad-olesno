@@ -121,8 +121,8 @@ collections:
         file: "content/settings/contact.md"
         fields:
           - {label: "Telefon", name: telephone, widget: string, required: true}
-          - {label: "Email", name: email, widget: string, required: true}
-          - {label: "Facebook", name: facebook, widget: string}
+          - {label: "Email", name: email, widget: string, required: false}
+          - {label: "Facebook", name: facebook, widget: string, required: false}
       - label: "Adres"
         name: "homepage"
         file: "content/settings/address.md"

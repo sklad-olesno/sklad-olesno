@@ -3,9 +3,6 @@
 
     <h1 class="f1 primary tc ttu fw6 mt5 mb3 lh-solid">Oferta</h1>
 
-    <nuxtdown-body class="body cms" :body="page.body"/>
-
-
     <ul class="prices-block--list flex flex-wrap justify-center ph2">
       <li class="w-33-ns ph2 mb4" v-for="item in page.products">
 

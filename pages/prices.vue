@@ -3,8 +3,6 @@
 
     <h1 class="f1 primary tc ttu fw6 mt5 lh-solid">Cennik</h1>
 
-    <nuxtdown-body class="cms tc mb5 mt3 ph2" v-if="typeof page.body_before !== 'undefined'" :body="page.body_before"/>
-
     <ul class="prices-block--list flex flex-wrap justify-center ph2">
       <li class="w-33-ns ph2 mb4" v-for="item in page.prices">
 
@@ -45,8 +43,6 @@
       <li class="w-33-ns ph2"></li>
     </ul>
 
-    <nuxtdown-body class="cms tc mb5 mt5" v-if="typeof page.body_after !== 'undefined'" :body="page.body_after"/>
-    <span v-if="typeof page.body_after === 'undefined'" class="db mb5"> </span>
   </div>
 </template>
 

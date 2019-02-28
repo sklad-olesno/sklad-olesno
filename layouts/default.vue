@@ -62,7 +62,7 @@
           <div class="mb3">
             <h3 class="f4 b lh-title mb1 primary">Adres</h3>
               <address>
-                <span class="db" v-html="address.company_street.split(/\n/).join('<br/>')"></span><br/>
+                <span class="db" v-html="address.company_street.split(/\n/).join('<br/>')"></span>
                 {{ address.company_zip_code }} {{ address.company_city }}
               </address>
               <br/>

@@ -83,7 +83,7 @@
               </li>
               <li class="dib ph2">
                 <a v-if="contact.telephone" :href="'tel:' + contact.telephone.split(' ').join('')" class="link tel db relative b pa1 mb3">
-                  TEL: {{ contact.telephone }}
+                  {{ contact.telephone }}
                 </a>
               </li>
             </ul>

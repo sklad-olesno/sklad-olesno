@@ -133,7 +133,7 @@ collections:
           - {label: "Facebook", name: facebook, widget: string, required: false}
       - label: "Adres"
         name: "homepage"
-        file: "content/settings/address.md"
+        file: "content/settings/adress.md"
         fields:
           - {label: "Nazwa firmy", name: company_name, widget: string, required: true}
           - {label: "Ulica", name: company_street, widget: text}

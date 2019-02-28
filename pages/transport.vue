@@ -1,6 +1,6 @@
 <template>
   <div class="mw7 ph4">
-    <h1 class="f1 primary tc ttu fw6 mt5 mb3 lh-solid">Transport</h1>
+    <h1 class="f1 primary tc ttu fw6 mt5 mb4 lh-solid">Transport</h1>
 
     <nuxtdown-body class="body cms" :body="page.body"/>
   </div>

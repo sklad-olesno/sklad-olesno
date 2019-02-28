@@ -10,7 +10,7 @@ sections:
   - section_button_link: /contact
     section_button_title: Składam ofertę
     section_description: |-
-      Proponujemy oszczędność czasu poprzez zakup z dowozem m.in.:
+      Sprzedaż i transport:
       - piasku i żwiru
       - kamień bazaltowy 
       - granit
@@ -21,6 +21,6 @@ sections:
     section_image: /images/uploads/oskład.jpg
     section_layout_block: duo
     section_layout_button: section_layout_button_end
-    section_title: Nie tylko transport kruszców
+    section_title: Oferta
 ---
 

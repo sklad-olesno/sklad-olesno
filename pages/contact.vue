@@ -162,4 +162,10 @@ export default {
     color: #ccc;
     box-shadow: inset 0 0 0 2px #ccc;
   }
+
+  .contact-block .cms{
+    color: #da2222;
+    font-weight: 600;
+    font-size: 40px;
+  }
 </style>

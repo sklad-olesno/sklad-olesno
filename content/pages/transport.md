@@ -11,3 +11,5 @@ Przewozimy opał i groszek pod wskazany adres i na czas co gwarantuje zadowoleni
 Jeśli jesteś z terenu Olesna to dostarczymy opał całkowicie **GRATIS**
 
 Na terenie województwa opolskiego jak również całej Polski oferujemy stosunkowo niski koszt przy zapewnieniu terminowości naszego transportu.
+
+![Zasięg działania](/images/uploads/zasieg.png)

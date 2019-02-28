@@ -63,7 +63,7 @@
             <h3 class="f4 b lh-title mb1 primary">Adres</h3>
               <address>
               {{ address.company_street }}<br/>
-              {{ address.company_city }} {{ address.company_zip_code }}
+              {{ address.company_zip_code }} {{ address.company_city }}
               </address>
               <br/>
               {{ address.company_hours_array[0] }}<br/>

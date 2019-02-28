@@ -13,7 +13,7 @@
       <a
         v-if="data.section_button_link && (data.section_layout_button === 'section_layout_button_text')"
         :href="data.section_button_link"
-        class="btn raise tl"
+        class="btn raise tl justify-center items-center justify-start-l"
       >
         {{ data.section_button_title }}
       </a>

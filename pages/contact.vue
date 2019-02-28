@@ -13,7 +13,7 @@
           <div class="ph1-ns w-50-ns">
             <h4 class="f4 b lh-title mb2 primary">Lokalizacja</h4>
             <address class="mb4">
-              <span class="db" v-html="address.company_street"></span>
+              <span class="db" v-html="address.company_street.split(/\n/).join('<br/>')"></span>
               {{ address.company_zip_code }} {{ address.company_city }}
             </address>
           </div>
@@ -118,9 +118,6 @@ export default {
   data: () => ({
     legalAgreement: false
   }),
-  mounted(){
-    this.address.company_street = this.address.company_street.split(/\n/).join('<br/>');
-  },
   asyncData: async ({ app, route, payload }) => {
     return {
       page: (await app.$content("/pages").get(route.path)) || payload

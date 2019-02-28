@@ -19,7 +19,7 @@ sections:
       - wapno nawozowe
       - kamień wapienny
       - kora kamienna
-      - inne kruszywaxxx
+      - inne kruszywa
     section_image: /images/uploads/oskład.jpg
     section_layout_block: duo
     section_layout_button: ''

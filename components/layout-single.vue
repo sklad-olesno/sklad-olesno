@@ -7,7 +7,7 @@
 
       <p
         class="center tc grey-4"
-        :class="(data.section_button_title !== '' ? 'mb0' : 'mb4')"
+        :class="(data.section_button_title !== '' || (data.section_button_link !== 'section_layout_button_text') ? 'mb0' : 'mb4')"
       >
         {{ data.section_description }}
       </p>
@@ -15,7 +15,7 @@
       <a
         v-if="data.section_button_link && (data.section_button_link === 'section_layout_button_text')"
         :href="data.section_button_link"
-        class="btn raise center tl"
+        class="btn raise center tc"
       >
         {{ data.section_button_title }}
       </a>

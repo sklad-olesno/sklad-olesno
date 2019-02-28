@@ -72,12 +72,17 @@
 
           <div>
             <h3 class="f4 b lh-title mb2 primary">Kontakt</h3>
-            <ul class="mhn2">
+            <ul class="mhn2 flex flex-column items-start">
               <li class="dib ph2 raise">
-                <a :href="contact.facebook" class="link bg-white black db relative br-100 pa2">
+                <a v-if="contact.facebook" :href="contact.facebook" class="link bg-white black db relative br-100 pa2">
                   <svg width="16px" height="16px" class="db">
                     <use xlink:href="#facebook"></use>
                   </svg>
+                </a>
+              </li>
+              <li class="dib ph2 raise">
+                <a v-if="contact.telephone" :href="contact.telephone.split(' ').join('')" class="link bg-white black db relative pa1 mt3">
+                  {{ contact.telephone }}
                 </a>
               </li>
             </ul>

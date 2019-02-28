@@ -5,17 +5,25 @@ description: >-
   transport gratis na terenie Olesna jak również możemy indywidualnie i
   korzystnie wycenić dowóz w regionie województwa opolskiego.
 products:
-  - ash: '1'
-    calorific: '1'
-    granulation: '1'
+  - ash: 7 - 10 %
+    calorific: 24 mj
+    granulation: 40 - 80 mm
+    image: /images/uploads/orzech.jpg
+    name: Orzech
+  - ash: 'Popiół: 7 - 10 %'
+    calorific: 'Kaloryczność: 24 mj'
+    granulation: 'Granulacja: 80 - 200 mm'
+    image: /images/uploads/kostka.jpg
+    name: Kostka
+  - ash: 10 %
+    calorific: 23 mj
+    granulation: 0 - 25 mm
+    image: /images/uploads/miał.jpg
+    name: Miał
+  - ash: 5%
+    calorific: '27,7 mj'
+    granulation: 5 - 25 mm
     image: /images/uploads/ekogroszek.jpg
-    name: Test
+    name: Ekogroszek I
 ---
-Nasz skład opału oferuje:
 
-* Orzech I
-* Orzech II
-* Groszek
-* Kostka
-* Ekogroszek
-* Miał

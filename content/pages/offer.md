@@ -25,5 +25,10 @@ products:
     granulation: 5 - 25 mm
     image: /images/uploads/ekogroszek.jpg
     name: Ekogroszek I
+  - ash: 9 %
+    calorific: 24 mj
+    granulation: 5 - 25 mm
+    image: /images/uploads/ekogroszek.jpg
+    name: Ekogroszek II
 ---
 

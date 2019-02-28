@@ -13,7 +13,7 @@
       <a
         v-if="data.section_button_link && (data.section_layout_button === 'section_layout_button_text')"
         :href="data.section_button_link"
-        class="btn raise tl items-center-l items-start justify-start"
+        class="btn raise tl items-center-l items-start justify-start mb3"
       >
         {{ data.section_button_title }}
       </a>
@@ -29,7 +29,7 @@
       <a
         v-if="data.section_button_link && (data.section_layout_button === 'section_layout_button_image')"
         :href="data.section_button_link"
-        class="btn raise tl ml0"
+        class="btn raise tl ml0 mb3"
       >
         {{ data.section_button_title }}
       </a>

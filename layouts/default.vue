@@ -106,6 +106,9 @@
       contact() {
         return this.$store.getters.contact
       }
+    },
+    mounted(){
+      this.address.company_street = this.address.company_street.split(/\n/).join('<br/>');
     }
   }
 </script>

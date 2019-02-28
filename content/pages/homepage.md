@@ -30,11 +30,9 @@ sections:
   - section_button_link: /mati-trans
     section_button_title: Czytaj więcej
     section_description: >-
-      Jeśli interesujesz się przewozem kruszców lub masz większe oczekiwanie to
-      dobrze trafiłeś. 
-
-      Jesteśmy bezpośrednim partnerem firmy MATI TRANS co pozwala nam na szerszy
-      wachlarz możliwości wraz z lepszą ceną. 
+      Jeśli interesuje cię zakup lub transport piasku, żwiru lub innych kruszyw
+      to dobrze trafiłeś. Jesteśmy bezpośrednim partnerem firmy MATI TRANS co
+      pozwala nam na szerszy wachlarz możliwości wraz z lepszą ceną.
     section_image: /images/uploads/oskład.jpg
     section_layout_block: duo
     section_layout_button: section_layout_button_text

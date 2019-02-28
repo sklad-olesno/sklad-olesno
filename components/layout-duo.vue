@@ -1,7 +1,7 @@
 <template>
   <div class="flex-l flex-wrap items-center mhn1-l ph3 center mw7 pv4 ph3" :class="mainClass">
 
-    <div class="w-40-l flex justify-center justify-left-m items-center flex-wrap">
+    <div class="w-40-l flex flex-column justify-center justify-left-m items-center flex-wrap">
       <h2 class="f2 mb0 b lh-title tc tl-l w-100" :class="theme === 'dark' ? 'grey-4' : 'primary'">
         {{ data.section_title }}
       </h2>
@@ -13,7 +13,7 @@
       <a
         v-if="data.section_button_link && (data.section_layout_button === 'section_layout_button_text')"
         :href="data.section_button_link"
-        class="btn raise tl justify-center items-center justify-start-l"
+        class="btn raise tl items-center-l items-start justify-start"
       >
         {{ data.section_button_title }}
       </a>

@@ -22,21 +22,6 @@
             <img class="img-fluid" :src="item.image"/>
           </p>
 
-          <ul class="tl">
-            <li>
-              <p class="pb2 mb2 divider-grey">Granulacja: {{ item.granulation }}</p>
-            </li>
-
-            <li>
-              <p class="pb2 mb2 divider-grey">Kaloryczność: {{ item.calorific }}</p>
-            </li>
-
-            <li>
-              <p class="">Popiół: {{ item.ash }}</p>
-            </li>
-
-          </ul>
-
       </li>
       <li class="w-33-ns ph2"></li>
       <li class="w-33-ns ph2"></li>

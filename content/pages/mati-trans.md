@@ -15,9 +15,11 @@ sections:
       - kamień bazaltowy 
       - granit
       - kamień ozdobny
-      - wapno nawozowe
-      - kora kamienna
       - grys granitowy
+      - wapno nawozowe
+      - kamień wapienny
+      - kora kamienna
+      - inne kruszywa
     section_image: /images/uploads/oskład.jpg
     section_layout_block: duo
     section_layout_button: section_layout_button_end

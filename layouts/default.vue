@@ -82,7 +82,7 @@
                 </a>
               </li>
               <li class="dib ph2 raise">
-                <a v-if="contact.telephone" :href="contact.telephone.split(' ').join('')" class="link bg-white black db relative pa1 mb3">
+                <a v-if="contact.telephone" :href="'tel:' + contact.telephone.split(' ').join('')" class="link bg-white black db relative pa1 mb3">
                   {{ contact.telephone }}
                 </a>
               </li>

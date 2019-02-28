@@ -1,7 +1,7 @@
 <template>
   <div class="flex-l flex-wrap items-center mhn1-l ph3 center mw7 pv4 ph3" :class="mainClass">
 
-    <div class="w-40-l flex flex-column justify-center justify-left-m items-center flex-wrap">
+    <div class="w-40-l flex flex-column justify-center justify-start-l items-center flex-wrap">
       <h2 class="f2 mb0 b lh-title tc tl-l w-100" :class="theme === 'dark' ? 'grey-4' : 'primary'">
         {{ data.section_title }}
       </h2>

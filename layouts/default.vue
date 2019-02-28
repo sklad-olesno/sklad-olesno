@@ -82,7 +82,7 @@
                 </a>
               </li>
               <li class="dib ph2">
-                <a v-if="contact.telephone" :href="'tel:' + contact.telephone.split(' ').join('')" class="link white db relative pa1 mb3">
+                <a v-if="contact.telephone" :href="'tel:' + contact.telephone.split(' ').join('')" class="link tel db relative b pa1 mb3">
                   TEL: {{ contact.telephone }}
                 </a>
               </li>
@@ -113,10 +113,13 @@
         return this.$store.getters.contact
       }
     },
+    data: () => ({
+      company_street_line_1: '',
+      company_street_line_2: ''
+    }),
     mounted(){
       var street = this.address.company_street.split(/\n/);
       this.address.company_street_line_1 = street[0];
-      this.address.company_street_line_2 = '';
 
       if(street.length > 1){
         this.address.company_street_line_2 = street[1];
@@ -148,5 +151,9 @@
 
   .special a{
     color: #2C57E8;
+  }
+
+  .tel{
+    color: #da2222;
   }
 </style>

@@ -20,7 +20,7 @@
           <nuxt-link :to="'/transport'" class="pa2 pa3-ns no-underline db">Transport</nuxt-link>
         </li>
         <li class="special">
-          <nuxt-link :to="'/mati-trans'" class="pa2 pa3-ns no-underline db">Mati-Transport</nuxt-link>
+          <nuxt-link :to="'/mati-trans'" class="pa2 pa3-ns no-underline db">Mati Trans</nuxt-link>
         </li>
         <li>
           <nuxt-link :to="'/contact'" class="pa2 pa3-ns no-underline db">Kontakt</nuxt-link>

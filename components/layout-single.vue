@@ -7,7 +7,7 @@
 
       <p
         class="center tc grey-4"
-        :class="(data.section_button_title !== '' || (data.section_button_link !== 'section_layout_button_text') ? 'mb0' : 'mb4')"
+        :class="(data.section_button_title !== '' || (data.section_button_link !== 'section_layout_button_text') ? 'mb2' : 'mb4')"
       >
         {{ data.section_description }}
       </p>

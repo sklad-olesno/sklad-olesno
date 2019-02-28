@@ -5,9 +5,7 @@ company_street: |-
   Poczta: Olesno
 company_zip_code: 46-300
 company_city: Świercze
-company_hours: |-
-  Pon - Pt: 8:00 - 16:00 
-  Sb: 8:00 - 16:00
+company_hours: 'Pon - Pt: 8:00 - 16:00'
 copyright: Mati Trans
 ---
 

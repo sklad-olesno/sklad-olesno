@@ -10,9 +10,9 @@ products:
     granulation: 40 - 80 mm
     image: /images/uploads/orzech.jpg
     name: Orzech
-  - ash: 'Popiół: 7 - 10 %'
-    calorific: 'Kaloryczność: 24 mj'
-    granulation: 'Granulacja: 80 - 200 mm'
+  - ash: 7 - 10 %
+    calorific: 24 mj
+    granulation: 80 - 200 mm
     image: /images/uploads/kostka.jpg
     name: Kostka
   - ash: 10 %

@@ -29,7 +29,7 @@
         </div>
 
 
-        <div class="mb4">
+        <div class="mb4" v-if="contact.email !== ''">
           <h4 class="f3 b lh-title mb3 tc">Napisz do nas</h4>
 
           <form action="" data-netlify="true" data-netlify-recaptcha="true">

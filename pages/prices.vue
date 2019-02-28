@@ -1,7 +1,7 @@
 <template>
   <div class="prices-block">
 
-    <h1 class="f1 primary tc ttu fw6 mt5 lh-solid">Cennik</h1>
+    <h1 class="f1 primary tc ttu fw6 mt5 mb3 lh-solid">Cennik</h1>
 
     <ul class="prices-block--list flex flex-wrap justify-center ph2">
       <li class="w-33-ns ph2 mb4" v-for="item in page.prices">

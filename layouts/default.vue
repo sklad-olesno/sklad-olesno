@@ -20,7 +20,7 @@
           <nuxt-link :to="'/transport'" class="pa2 pa3-ns no-underline db">Transport</nuxt-link>
         </li>
         <li class="special">
-          <nuxt-link :to="'/mati-transport'" class="pa2 pa3-ns no-underline db">Mati-Transport</nuxt-link>
+          <nuxt-link :to="'/mati-trans'" class="pa2 pa3-ns no-underline db">Mati-Transport</nuxt-link>
         </li>
         <li>
           <nuxt-link :to="'/contact'" class="pa2 pa3-ns no-underline db">Kontakt</nuxt-link>
@@ -54,7 +54,7 @@
               <li><nuxt-link :to="'/offer'" class="link db">Oferta</nuxt-link></li>
               <li><nuxt-link :to="'/prices'" class="link db">Cennik</nuxt-link></li>
               <li><nuxt-link :to="'/transport'" class="link db">Transport</nuxt-link></li>
-              <li><nuxt-link :to="'/mati-transport'" class="link db">Mati-Transport</nuxt-link></li>
+              <li><nuxt-link :to="'/mati-trans'" class="link db">MATI TRANS</nuxt-link></li>
               <li><nuxt-link :to="'/contact'" class="link db">Kontakt</nuxt-link></li>
             </ul>
           </div>

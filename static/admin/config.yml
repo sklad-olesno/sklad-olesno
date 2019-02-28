@@ -76,8 +76,8 @@ collections:
           - {label: "Opis", name: description, widget: text, required: true}
           - {label: "Treść", name: body, widget: markdown}
       - label: "Mati-Trans"
-        name: "mati-transport"
-        file: "content/pages/mati-transport.md"
+        name: "mati-trans"
+        file: "content/pages/mati-trans.md"
         fields:
           - {label: "Tytuł", name: title, widget: string, required: true}
           - {label: "Opis", name: description, widget: text, required: true}

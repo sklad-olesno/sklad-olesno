@@ -29,7 +29,7 @@ prices:
     image: /images/uploads/ekogroszek.jpg
     name: Ekogroszek I
     non_packed: 820 zł
-    packed: 870 zł
+    packed: 890 zł
   - ash: 9 %
     calorific: 24 mj
     granulation: 5 - 25 mm

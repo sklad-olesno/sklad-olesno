@@ -70,7 +70,10 @@
         },
         required: false
       }
-    }
+    },
+    mounted() {
+      this.data.section_description = this.page.section_description.split(/\n/).join('<br/>');
+    },
   }
 </script>
 

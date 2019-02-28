@@ -9,7 +9,7 @@
         class="center tc grey-4"
         :class="(data.section_button_title !== '' || (data.section_button_link !== 'section_layout_button_text') ? 'mb2' : 'mb4')"
       >
-        {{ data.section_description }}
+        <span v-html="data.section_description"></span>
       </p>
 
       <a
@@ -63,7 +63,7 @@
         required: false
       },
       mounted() {
-        this.data.section_description = this.page.section_description.split(/\n/).join('<br/>');
+        this.data.section_description = this.data.section_description.split(/\n/).join('<br/>');
       },
     }
   }

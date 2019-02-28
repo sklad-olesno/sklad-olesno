@@ -7,7 +7,7 @@
       </h2>
 
       <p class="pr3-l flex justify-center items-center justify-start-l tl mv3 grey-4 w-100" v-if="data.section_image">
-        {{ data.section_description }}
+        <span v-html="data.section_description"></span>
       </p>
 
       <a
@@ -21,7 +21,7 @@
 
     <div class="w-60-l mb0 flex justify-center items-center">
       <p v-if="!data.section_image" class="pl3-m center flex justify-center justify-start-l items-center tl mv3 grey-4">
-        {{ data.section_description }}
+        <span v-html="data.section_description"></span>
       </p>
 
       <img v-if="data.section_image !== ''" :src="data.section_image" alt="" class="mb3">
@@ -72,7 +72,7 @@
       }
     },
     mounted() {
-      this.data.section_description = this.page.section_description.split(/\n/).join('<br/>');
+      this.data.section_description = this.data.section_description.split(/\n/).join('<br/>');
     },
   }
 </script>

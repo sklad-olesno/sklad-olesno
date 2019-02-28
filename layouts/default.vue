@@ -62,7 +62,8 @@
           <div class="mb3">
             <h3 class="f4 b lh-title mb1 primary">Adres</h3>
               <address>
-              {{ address.company_street }}<br/>
+              {{ address.company_street_line_1 }}<br v-if="company_street_line_2 !== ''"/>
+              {{ address.company_street_line_2 }}<br/>
               {{ address.company_zip_code }} {{ address.company_city }}
               </address>
               <br/>
@@ -74,14 +75,14 @@
             <h3 class="f4 b lh-title mb2 primary">Kontakt</h3>
             <ul class="mhn2 flex flex-column items-start">
               <li class="dib ph2 raise">
-                <a v-if="contact.facebook" :href="contact.facebook" class="link bg-white black db relative br-100 pa2">
+                <a v-if="contact.facebook" :href="contact.facebook" class="link bg-white black db relative br-100 pa2 mb3">
                   <svg width="16px" height="16px" class="db">
                     <use xlink:href="#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="dib ph2 raise">
-                <a v-if="contact.telephone" :href="contact.telephone.split(' ').join('')" class="link bg-white black db relative pa1 mt3">
+                <a v-if="contact.telephone" :href="contact.telephone.split(' ').join('')" class="link bg-white black db relative pa1 mb3">
                   {{ contact.telephone }}
                 </a>
               </li>
@@ -113,7 +114,13 @@
       }
     },
     mounted(){
-      this.address.company_street = this.address.company_street.split(/\n/).join('<br/>');
+      var street = this.address.company_street.split(/\n/);
+      this.address.company_street_line_1 = street[0];
+      this.address.company_street_line_2 = '';
+
+      if(street.length > 1){
+        this.address.company_street_line_2 = street[1];
+      }
     }
   }
 </script>

@@ -1,5 +1,5 @@
 ---
-title: Usługi transportowe Mati Trans
+title: Usługi transportowe MATI TRANS
 description: >-
   Proponujemy przewóz opału i kruszców w bardzo atrakcyjnej cenie. 
 

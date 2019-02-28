@@ -19,12 +19,12 @@
       </a>
     </div>
 
-    <div class="w-60-l mb0 flex justify-center items-center">
+    <div class="w-60-l mb0 flex justify-center items-center self-stretch">
       <p v-if="!data.section_image" class="pl3-m center flex justify-center justify-start-l items-center tl mv3 grey-4">
         <span v-html="data.section_description"></span>
       </p>
 
-      <img v-if="data.section_image !== ''" :src="data.section_image" alt="" class="mb3">
+      <img v-if="data.section_image !== ''" :src="data.section_image" alt="" class="mb3 self-start">
 
       <a
         v-if="data.section_button_link && (data.section_layout_button === 'section_layout_button_image')"

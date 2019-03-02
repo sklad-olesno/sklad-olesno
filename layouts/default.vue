@@ -2,7 +2,7 @@
   <div class="flex flex-column min-vh-100">
 
     <nav class="flex flex-wrap justify-between items-center center bg-white divider-grey relative w-100" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
-      <a href="/" class="pa3 db mr4 h-100 w4 flex-none mh0">
+      <a href="/" class="pa3 db mr4 h-100 w4 flex-none mh0" style="flex: 0;">
         <cLogo
           theme="light"
           classes="br0 db mb0 w-100"

@@ -9,7 +9,6 @@ module.exports = {
           { path: '**/*.css', as: 'style' },
           { path: '/_nuxt/img/*.svg', as: 'image/svg+xml' },
           { path: '/_nuxt/content/pages/*.json', as: 'application/json' },
-
         ]
       }
     ],
@@ -42,17 +41,20 @@ module.exports = {
     htmlAttrs: {
       lang: 'pl',
     },
-    title: "Skład opału",
+    title: "Skład opału - Olesno",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Skład opału"
-      }
+        content: "Skład opału wraz z przewozem na terenie Olesna granic"
+      },
+      {name: "robots", content: "INDEX, FOLLOW"}
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+      ]
   },
   /*
   ** Customize the progress bar color

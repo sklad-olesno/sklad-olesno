@@ -11,19 +11,19 @@
 
       <ul class="menu flex flex-wrap b grey-3 justify-center">
         <li>
-          <nuxt-link :to="'/offer/'" class="pa2 pa3-ns no-underline db">Oferta</nuxt-link>
+          <nuxt-link :to="'/offer'" class="pa2 pa3-ns no-underline db">Oferta</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/prices/'" class="pa2 pa3-ns no-underline db">Cennik</nuxt-link>
+          <nuxt-link :to="'/prices'" class="pa2 pa3-ns no-underline db">Cennik</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/transport/'" class="pa2 pa3-ns no-underline db">Transport</nuxt-link>
+          <nuxt-link :to="'/transport'" class="pa2 pa3-ns no-underline db">Transport</nuxt-link>
         </li>
         <li class="special">
-          <nuxt-link :to="'/mati-trans/'" class="pa2 pa3-ns no-underline db">Mati Trans</nuxt-link>
+          <nuxt-link :to="'/mati-trans'" class="pa2 pa3-ns no-underline db">Mati Trans</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/contact/'" class="pa2 pa3-ns no-underline db">Kontakt</nuxt-link>
+          <nuxt-link :to="'/contact'" class="pa2 pa3-ns no-underline db">Kontakt</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -51,11 +51,11 @@
           <div>
             <h3 class="f4 b lh-title mb1 primary">Menu</h3>
             <ul class="mb3">
-              <li><nuxt-link :to="'/offer/'" class="link db">Oferta</nuxt-link></li>
-              <li><nuxt-link :to="'/prices/'" class="link db">Cennik</nuxt-link></li>
-              <li><nuxt-link :to="'/transport/'" class="link db">Transport</nuxt-link></li>
-              <li><nuxt-link :to="'/mati-trans/'" class="link db">MATI TRANS</nuxt-link></li>
-              <li><nuxt-link :to="'/contact/'" class="link db">Kontakt</nuxt-link></li>
+              <li><nuxt-link :to="'/offer'" class="link db">Oferta</nuxt-link></li>
+              <li><nuxt-link :to="'/prices'" class="link db">Cennik</nuxt-link></li>
+              <li><nuxt-link :to="'/transport'" class="link db">Transport</nuxt-link></li>
+              <li><nuxt-link :to="'/mati-trans'" class="link db">MATI TRANS</nuxt-link></li>
+              <li><nuxt-link :to="'/contact'" class="link db">Kontakt</nuxt-link></li>
             </ul>
           </div>
 

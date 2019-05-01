@@ -38,8 +38,14 @@ module.exports = {
           macros: ['scaleAndCrop|160|90'],
           actions: ['quality|90']
         },
-        medium: { macros: ['scaleAndCrop|320|180'] },
-        large: { macros: ['scaleAndCrop|640|360'] },
+        medium: {
+          macros: ['scaleAndCrop|320|180'],
+          actions: ['quality|90']
+        },
+        large: {
+          macros: ['scaleAndCrop|640|360'],
+          actions: ['quality|90']
+        },
       },
       // Optional responsive style profiles:
       responsiveStyles: {

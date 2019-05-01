@@ -1,7 +1,7 @@
 <template>
   <div class="logo" :class="theme">
-    <img v-if="theme !== 'dark'" src="~/assets/logo.svg" alt="Skład opału logo" :class="classes">
-    <img v-if="theme === 'dark'" src="~/assets/logo-white.svg" alt="Skład opału logo" :class="classes">
+    <img v-if="theme !== 'dark'" src="~/assets/logo.svg" width="176px" height="63px" alt="Skład opału logo" :class="classes">
+    <img v-if="theme === 'dark'" src="~/assets/logo-white.svg" width="176px" height="63px" alt="Skład opału logo" :class="classes">
   </div>
 </template>
 

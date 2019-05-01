@@ -5,7 +5,7 @@
       <a href="/" class="pa3 db mr4 h-100 w4 flex-none mh0" style="flex: 0;">
         <cLogo
           theme="light"
-          classes="br0 db mb0 w-100"
+          classes="br0 db mb0 w-100 h-auto"
         />
       </a>
 
@@ -41,7 +41,7 @@
           <a href="/" class="no-underline db">
             <cLogo
               theme="dark"
-              classes="db w4 center mb4 br0"
+              classes="db w4 center mb4 br0 h-auto"
             />
           </a>
         </div>

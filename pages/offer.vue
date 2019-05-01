@@ -9,7 +9,7 @@
         <h3 class="b f4 primary tl lh-title mb3">{{ item.name }}</h3>
 
         <p class="b">
-          <img class="img-fluid" :src="item.image"/>
+          <nuxt-img :src="item.image" responsive-style="thumb" :alt="item.name" class="img-fluid"/>
         </p>
 
         <ul class="tl">

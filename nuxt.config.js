@@ -36,19 +36,19 @@ module.exports = {
       imageStyles: {
         small: {
           macros: ['scaleAndCrop|160|90'],
-          actions: ['quality|90']
+          actions: ['quality|80']
         },
         medium: {
           macros: ['scaleAndCrop|320|180'],
-          actions: ['quality|90']
+          actions: ['quality|80']
         },
         large: {
           macros: ['scaleAndCrop|640|360'],
-          actions: ['quality|90']
+          actions: ['quality|80']
         },
         banner: {
-          macros: ['scaleAndCrop|1200|auto'],
-          actions: ['quality|90']
+          macros: ['scaleAndCrop|1920|1080'],
+          actions: ['quality|80']
         },
       },
       // Optional responsive style profiles:

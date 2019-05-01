@@ -19,7 +19,7 @@
       >
         {{ data.section_button_title }}
       </a>
-    
+
       <nuxt-img
         v-if="data.section_image !== ''"
         :src="data.section_image"

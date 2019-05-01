@@ -38,6 +38,9 @@ module.exports = {
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
   },
+  sitemap: {
+    hostname: process.env.BASE_URL || 'http://localhost:3000'
+  },
   /*
   ** Headers of the page
   */

@@ -24,7 +24,7 @@
         <span v-html="data.section_description"></span>
       </p>
 
-      <nuxt-img v-if="data.section_image !== ''" :src="data.section_image" responsive-style="large" :alt="data.section_title" class="mb3 self-start"/>
+      <img v-if="data.section_image !== ''" :src="data.section_image" alt="" class="mb3 self-start">
 
       <a
         v-if="data.section_button_link && (data.section_layout_button === 'section_layout_button_image')"

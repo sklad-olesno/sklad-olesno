@@ -34,9 +34,9 @@ module.exports = {
     ['@reallifedigital/nuxt-image-loader-module', {
       imagesBaseDir: 'images',
       imageStyles: {
-        small: { macros: ['scale|160|90'] },
-        medium: { macros: ['scale|320|180'] },
-        large: { macros: ['scale|640|360'] },
+        small: { macros: ['scaleAndCrop|160|90'] },
+        medium: { macros: ['scaleAndCrop|320|180'] },
+        large: { macros: ['scaleAndCrop|640|360'] },
       },
       // Optional responsive style profiles:
       responsiveStyles: {

@@ -23,6 +23,7 @@
     "core-js": "^2.6.5",
     "nuxt": "~2.2.0",
     "nuxt-netlify-http2-server-push": "^0.1.2",
+    "nuxt-polyfill": "^1.0.3",
     "nuxtdown": "^2.0.3"
   },
   "devDependencies": {

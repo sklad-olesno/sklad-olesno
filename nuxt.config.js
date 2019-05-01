@@ -64,7 +64,8 @@ module.exports = {
       },
     }],
     '@nuxtjs/markdownit',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'nuxt-polyfill'
   ],
   manifest: {
     lang: 'pl',
@@ -83,6 +84,14 @@ module.exports = {
   },
   sitemap: {
     hostname: process.env.BASE_URL || 'http://localhost:3000'
+  },
+  polyfill: {
+    features: [
+      // {
+      //   require: 'intersection-observer',
+      //   detect: () => 'IntersectionObserver' in window,
+      // }
+    ]
   },
   /*
   ** Headers of the page
@@ -107,9 +116,6 @@ module.exports = {
       [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
       ],
-    script: [
-      { src: 'https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver', body: true }
-    ]
   },
   /*
   ** Customize the progress bar color

@@ -32,7 +32,7 @@ module.exports = {
       }
     ],
     ['@reallifedigital/nuxt-image-loader-module', {
-      imagesBaseDir: 'images',
+      imagesBaseDir: '/',
       imageStyles: {
         small: { macros: ['scaleAndCrop|160|90'] },
         medium: { macros: ['scaleAndCrop|320|180'] },

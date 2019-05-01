@@ -1,23 +1,27 @@
 module.exports = {
   modules: [
     "nuxtdown",
-    [
-      'nuxt-netlify-http2-server-push',
-      {
-        // Specify relative path to the dist directory and its content type
-        resources: [
-          { path: '**/*.css', as: 'style' },
-          { path: '/_nuxt/img/*.svg', as: 'image/svg+xml' },
-          { path: '/_nuxt/content/pages/*.json', as: 'application/json' },
-        ]
-      }
-    ],
+      [
+        'nuxt-netlify-http2-server-push',
+        {
+          // Specify relative path to the dist directory and its content type
+          resources: [
+            { path: '**/*.css', as: 'style' },
+            { path: '/_nuxt/img/*.svg', as: 'image/svg+xml' },
+            { path: '/_nuxt/content/pages/*.json', as: 'application/json' },
+          ]
+        }
+      ],
     '@nuxtjs/markdownit',
-    [
-      '@nuxtjs/pwa', {
-        icon: false
-      }
+      [
+        '@nuxtjs/pwa', {
+          icon: false
+        }
+      ],
+    ['@nuxtjs/google-tag-manager',
+      { id: 'GTM-N59H54M' }
     ],
+    '@nuxtjs/sitemap'
   ],
   manifest: {
     lang: 'pl',

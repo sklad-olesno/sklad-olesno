@@ -19,7 +19,7 @@
           </div>
 
           <p class="b">
-            <img class="img-fluid" :src="item.image"/>
+            <nuxt-img :src="item.image" responsive-style="thumb" :alt="item.name" class="img-fluid"/>
           </p>
 
       </li>

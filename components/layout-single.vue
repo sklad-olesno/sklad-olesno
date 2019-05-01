@@ -19,12 +19,13 @@
       >
         {{ data.section_button_title }}
       </a>
-
-      <img
+    
+      <nuxt-img
         v-if="data.section_image !== ''"
         :src="data.section_image"
-        class="center tc"
-      />
+        responsive-style="large"
+        :alt="data.section_title"
+        class="center tc"/>
 
       <a
         v-if="data.section_button_link && (data.section_layout_button === 'section_layout_button_image' || data.section_layout_button === 'section_layout_button_end')"

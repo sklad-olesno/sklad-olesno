@@ -43,20 +43,12 @@ module.exports = {
           actions: ['quality|80']
         },
         large: {
-          macros: ['scaleAndCrop|640|360'],
-          actions: ['quality|80']
-        },
-        banner: {
           macros: ['scaleAndCrop|1920|1080'],
           actions: ['quality|80']
         },
       },
       // Optional responsive style profiles:
       responsiveStyles: {
-        large: {
-          srcset: 'small 160w, medium 320w, large 640w, banner 1200w',
-          sizes: '(min-width: 1280px) 100vw, 50vw',
-        },
         thumb: {
           srcset: 'small 160w, medium 320w, large 640w',
           sizes: '(min-width: 1280px) 100vw, 50vw',

@@ -90,6 +90,8 @@ module.exports = {
   build: {
     html: {
       minify: {
+        collapseWhitespace: true,
+        removeComments: true,
         collapseBooleanAttributes: true,
         decodeEntities: true,
         minifyCSS: true,

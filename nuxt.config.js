@@ -1,4 +1,5 @@
 module.exports = {
+  target: 'static',
   modules: [
     "nuxtdown",
     [

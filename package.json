@@ -22,6 +22,7 @@
     "@nuxtjs/sitemap": "^1.0.0",
     "@reallifedigital/nuxt-image-loader-module": "^1.4.0",
     "core-js": "^2.6.5",
+    "gm": "^1.25.0",
     "nuxt": "~2.2.0",
     "nuxt-polyfill": "^1.0.3",
     "nuxtdown": "^2.0.3"
